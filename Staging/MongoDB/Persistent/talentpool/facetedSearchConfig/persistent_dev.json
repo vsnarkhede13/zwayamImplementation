@@ -1,0 +1,68 @@
+{
+    "companyId" : "15759",
+    "domain" : "persistent.dev1.openings.co",
+    "paginationHowMuch" : "10",
+    "freeTextfieldsConfig" : {
+        "wildcard" : {
+            "string" : [ 
+                "jobTitle", 
+                "locAgg"
+            ]
+        },
+        "terms" : {
+            "string" : [ 
+                "mandatorySkills", 
+                "desiredSkillList", 
+                "jdSkillsKnownList"
+            ]
+        }
+    },
+    "queryCriteria" : {
+        "careersite" : {
+            "or" : [ 
+                {
+                    "type" : "terms",
+                    "fieldName" : "location",
+                    "fieldValues" : [ 
+                        "Denver, CO, USA"
+                    ]
+                }
+            ]
+        }
+    },
+    "range" : {
+        "displayInColumn" : true,
+        "displayName" : "By Experience (in Years)",
+        "ranges" : [ 
+            {
+                "from" : "minYearOfExperience",
+                "to" : "maxYearOfExperience"
+            }
+        ],
+        "scope" : [ 
+            "localhost"
+        ]
+    },
+    "facets" : [ 
+        {
+            "type" : "keyword",
+            "displayInAdvancedSearch" : false,
+            "displayName" : "Location",
+            "fieldName" : "locAgg",
+            "scope" : [ 
+                "persistent.dev1.openings.co"
+            ]
+        }
+    ],
+    "facetsMapping" : {
+        "Location" : "locAgg"
+    },
+    "uiFields" : [ 
+        {
+            "displayInColumn" : true,
+            "displayName" : "",
+            "fieldName" : "location",
+            "type" : "text"
+        }
+    ]
+}

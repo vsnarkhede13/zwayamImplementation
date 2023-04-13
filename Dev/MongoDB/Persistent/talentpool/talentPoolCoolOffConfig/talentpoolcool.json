@@ -1,0 +1,10 @@
+{
+    "_id": ObjectId("624bca9c914a367efc892b46"),
+    "uniqueName": "PersistentTalentpool",
+    "statusAndCoolOff": {
+        "Rejected": 0,
+        "HM Rejected": 0,
+        "default": 6,
+        "Duplicate":9999
+    }
+}

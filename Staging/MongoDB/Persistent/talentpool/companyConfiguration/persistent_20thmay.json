@@ -1,0 +1,894 @@
+{
+   "companyId": 14977,
+   "companyName": "Persistent",
+   "userId": 1,
+   "emailId": "persistentpreprodadmin@yopmail.com",
+   "password": "123456",
+   "roleId": 1,
+   "cancelInterviews": {
+      "cancelInterviewsEnabled": true,
+      "cancelInterviewsName": "Loop-Cut"
+   },
+   "interviewerType": [
+      "Interviewer",
+      "Shadow",
+      "Reverse Shadow"
+   ],
+   "resceduleInterviewReasons": [
+      "Request from Candidate",
+      "Request from Interviewer"
+   ],
+   "cancelInterviewReason": [
+      "Due to Candidate",
+      "Due to Interviewer"
+   ],
+   "atsType": "PERSISTENT",
+   "tokenKey": "ZkVCOWwyM2dBZUc1ME9YMjhUNlRwNkh1bEdaUXdqemQ6aVFVRlpMZnB1STRhM0gzMA==",
+   "userType": "Hiring Manager",
+   "syncUrl": "https://api.persistent.com:9000/v1/oauth2-all/token?grant_type=client_credentials&scope=Read",
+   "persistantUserXmlbody": "<?xml version='1.0' encoding='UTF-8'?><soap:Envelope xmlns:soap='http://www.w3.org/2003/05/soap-envelope' xmlns:pub='http://xmlns.oracle.com/oxp/service/PublicReportService'><soap:Header /><soap:Body><pub:runReport><pub:reportRequest><pub:attributeFormat>xml</pub:attributeFormat><pub:parameterNameValues><!--Zero or more repetitions:--><pub:item><pub:name>p_last_run_date</pub:name><pub:values><pub:item>$Date$</pub:item></pub:values></pub:item></pub:parameterNameValues><pub:reportAbsolutePath>/Custom/Integrations/HCM/Taleo_Fusion/Report - Emp. Details.xdo</pub:reportAbsolutePath><pub:sizeOfDataChunkDownload>-1</pub:sizeOfDataChunkDownload></pub:reportRequest></pub:runReport></soap:Body></soap:Envelope>",
+   "getUserXmlUrl": "https://api.persistent.com:9010/corehrhcm/xmlpserver/services/externalreportwssservice",
+   "empTypeMapping": {
+      "empId": "empId",
+      "email": "email",
+      "firstName": "firstName",
+      "lastName": "lastName",
+      "S13": "S13",
+      "S14": "S14",
+      "ReportingManagerID": "ReportingManagerID",
+      "S2": "S2",
+      "S12": "S12",
+      "S4": "S4",
+      "status": "status",
+      "S1": "S1"
+   },
+   "tokenUrl": "https://api.persistent.com:9000/v1/oauth2-all/token?grant_type=client_credentials&scope=Read",
+   "tokenReqKey": "b0FyNUlSSllDZkw3WXgxWFJHSEFmNGIzdGF2Y3R2Sk86R25CSFgxYkxndWVlZVVicw==",
+   "enableForCreateReqForPersistent": true,
+   "hideOldJobs": false,
+   "jobJsonFieldsMap": {
+      "e:JobField": "e:CieJobField",
+      "e:Organization": "e:Organization",
+      "e:PrimaryLocation": "e:CieLocation"
+   },
+   "jsonobjs": [
+      "e:Title",
+      "e:DescriptionExternalHTML",
+      "e:DescriptionInternalHTML",
+      "e:HireType",
+      "e:JobField",
+      "e:Organization",
+      "e:PrimaryLocation"
+   ],
+   "geoMapping": {
+      "India": "India",
+      "Sri Lanka": "Sri Lanka",
+      "Japan": "APJ",
+      "Singapore": "APJ",
+      "Malaysia": "APJ",
+      "Australia": "APJ",
+      "New Zealand": "APJ",
+      "Philippines": "APJ",
+      "South Africa": "MENA",
+      "Israel": "MENA",
+      "Saudi Arabia": "MENA",
+      "United Arab Emirates": "MENA",
+      "Dubai": "MENA",
+      "Germany": "EU",
+      "Switzerland": "EU",
+      "France": "EU",
+      "Netherlands": "EU",
+      "Greece": "EU",
+      "Romania": "EU",
+      "Italy": "EU",
+      "Belgium": "EU",
+      "Hungary": "EU",
+      "Ukraine": "EU",
+      "Czech Republic": "EU",
+      "Sweden": "EU",
+      "Portugal": "EU",
+      "Austria": "EU",
+      "United States": "North America",
+      "Canada": "North America",
+      "Mexico": "North America",
+      "Costa Rica": "Latin America",
+      "Brazil": "Latin America",
+      "Columbia": "Latin America",
+      "Chile": "Latin America"
+   },
+   "geoCountryList": [
+      "North America",
+      "Latin America"
+   ],
+   "userCreationFieldMap": {
+      "EMP_FIRST_NAME": "firstName",
+      "EMP_LAST_NAME": "lastName",
+      "MGR_PERSON_NUMBER": "ReportingManagerID",
+      "OU_NAME": "S14",
+      "EMP_DU_ID": "S4",
+      "GRADE_ID": "S1",
+      "BU_NAME": "S13",
+      "EMP_DESIGNATION": "S2",
+      "EMP_EMAIL_ADDRESS": "email",
+      "LEGAL_ENTITY_ID": "S12",
+      "EMP_PERSON_NUMBER": "empId"
+   },
+   "fieldsTofetch": [
+      "EMP_FIRST_NAME",
+      "EMP_LAST_NAME",
+      "MGR_PERSON_NUMBER",
+      "OU_NAME",
+      "EMP_DU_ID",
+      "GRADE_ID",
+      "BU_NAME",
+      "EMP_DESIGNATION",
+      "EMP_EMAIL_ADDRESS",
+      "LEGAL_ENTITY_ID",
+      "EMP_PERSON_NUMBER"
+   ],
+   "fieldMapping": {
+      "XXPSL_5fALLOCATION_5fEND_5fDATE": "Allocation end date",
+      "XXPSL_5fALLOCATION_5fSTART_5fDATE": "Allocation start date",
+      "XXPSL_5fASSGNMNT_5fLOC": "Assignment Location",
+      "XXPSL_5fRM_5fBILLING_5fDATE": "Billing Date",
+      "XXPSL_5fINDENT_5fBILLING_5fSTATUS": "Billing Status",
+      "XXPSL_5fBUSINESS_5fMODEL": "Business Model",
+      "XXPSL_5fINDENT_5fBU": "Business Unit",
+      "XXPSL_5fCLIENT_5fINTVW_5fREQ": "Client Interview Required",
+      "XXPSL_5fCLIENT_5fNAME": "Client Name",
+      "XXPSL_5fDEMAND_5fTYPE": "Demand Type",
+      "desirableskills": "Desirable Skills",
+      "XXPSL_5fEXPERIENCE_5fLEVEL": "Experience Level",
+      "e:HireType": "Hire Type",
+      "hmEmail": "Hiring Manager",
+      "XXPSL_5fINDENT_5fCAT": "Indent Category",
+      "XXPSL_5fINDENT_5fCLASSIFICATION": "Indent Classification",
+      "XXPSL_5fINDENT_5fPRIORITY": "Indent Priority",
+      "XXPSL_5fINDENT_5fSTATUS": "Indent status at source",
+      "XXPSL_5fINDENT_5fEXTERNAL": "Indents External",
+      "e:DescriptionInternalHTML": "Internal Job Description",
+      "e:JobField": "Job Field",
+      "XXPSL_5fL1_5fINTERVIEWER": "L1 Interviewer",
+      "XXPSL_5fL1_5fSTRATEGY": "L1 Strategy",
+      "XXPSL_5fL2_5fINTERVIEWER": "L2 Interviewer",
+      "XXPSL_5fL2_5fSTRATEGY": "L2 Strategy",
+      "Fusion_5fLegalEmployers_5fUDF": "Legal Employer",
+      "e:PrimaryLocation": "Location",
+      "mandatorySkill": "Mandatory Skills",
+      "XXPSL_5fPROJ_5fNAME": "Opportunity/Project Name",
+      "XXPSL_5fPROJ_5fSTAGE": "Opportunity/Project Stage",
+      "e:Organization": "Organization",
+      "XXPSL_5fINDENT_5fOU": "Organization Unit",
+      "XXPSL_5fINDENT_5fPROVIDING_5fBU": "Providing BU",
+      "XXPSL_5fINDENT_5fPROVIDING_5fDU": "Providing DU",
+      "Fusion_5fGrades_5fUDF": "Requisition Grade",
+      "skillstoeval": "SkillsToEvaluate",
+      "XXPSL_5fSUBCON_5fALLWD": "SubCon Allowed",
+      "contestNumber": "Reference Number",
+      "XXPSL_5fEXT_5fMARKED_5fDATE": "Created Date",
+      "e:Title": "Job Title",
+      "e:DescriptionExternalHTML": "Job Description",
+      "city": "City",
+      "BU": "Business Unit",
+      "OU": "Organization Unit",
+      "DU": "Providing DU",
+      "persistant": "persistent",
+      "XXPSL_5fSkill1": "skill01",
+      "XXPSL_5fSkill2": "skill02",
+      "XXPSL_5fSkill3": "skill03",
+      "state": "Status",
+      "hireNumber": "Open Positions",
+      "collabarator": "Collaborator",
+      "Department": "DeptFullCode",
+      "Dept_DU": "Department Unit",
+      "createdDateTaleo": "Taleo Creation Date"
+   },
+   "fieldsToParse": [
+      "XXPSL_5fALLOCATION_5fSTART_5fDATE",
+      "XXPSL_5fALLOCATION_5fEND_5fDATE",
+      "XXPSL_5fRM_5fBILLING_5fDATE",
+      "XXPSL_5fINDENT_5fOU",
+      "XXPSL_5fINDENT_5fBU",
+      "Fusion_5fLegalEmployers_5fUDF",
+      "XXPSL_5fASSGNMNT_5fLOC",
+      "XXPSL_5fPROJ_5fNAME",
+      "XXPSL_5fPROJ_5fSTAGE",
+      "XXPSL_5fEXPERIENCE_5fLEVEL",
+      "XXPSL_5fBUSINESS_5fMODEL",
+      "XXPSL_5fCLIENT_5fNAME",
+      "XXPSL_5fINDENT_5fSTATUS",
+      "XXPSL_5fINDENT_5fBILLING_5fSTATUS",
+      "XXPSL_5fDEMAND_5fTYPE",
+      "XXPSL_5fINDENT_5fCAT",
+      "XXPSL_5fINDENT_5fCLASSIFICATION",
+      "XXPSL_5fINDENT_5fEXTERNAL",
+      "XXPSL_5fEXT_5fMARKED_5fDATE",
+      "XXPSL_5fINDENT_5fPROVIDING_5fDU",
+      "XXPSL_5fINDENT_5fPROVIDING_5fBU",
+      "XXPSL_5fINDENT_5fPRIORITY",
+      "XXPSL_5fSUBCON_5fALLWD",
+      "XXPSL_5fCLIENT_5fINTVW_5fREQ",
+      "XXPSL_5fL1_5fSTRATEGY",
+      "XXPSL_5fL2_5fSTRATEGY",
+      "XXPSL_5fL1_5fINTERVIEWER",
+      "XXPSL_5fL2_5fINTERVIEWER",
+      "XXPSL_5fSkill1",
+      "XXPSL_5fSkill2",
+      "XXPSL_5fSkill3",
+      "Fusion_5fGrades_5fUDF"
+   ],
+   "getXmlUrl": "https://api.persistent.com:9010/ax-taleo/taleoexport?ServiceName=FindService",
+   "persistantXmlbody": "<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/'><soapenv:Header/><soapenv:Body><itk:findPartialEntities xmlns:itk='http://www.taleo.com/ws/integration/toolkit/2005/07'><itk:mappingVersion>http://www.taleo.com/ws/art750/2006/12</itk:mappingVersion><itk:query><itk:query alias='Requisitions' projectedClass='Requisition'><itk:projections><itk:projection><itk:field path='ContestNumber'/></itk:projection><itk:projection><itk:field path='JobInformation,Title'/></itk:projection><itk:projection><itk:field path='NumberToHire'/></itk:projection><itk:projection><itk:field path='JobInformation,Fusion_5fGrades_5fUDF,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,HireType,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fALLOCATION_5fSTART_5fDATE'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fALLOCATION_5fEND_5fDATE'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fSkill1'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fSkill2'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fSkill3'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fINDENT_5fOU'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fINDENT_5fBU'/></itk:projection><itk:projection><itk:field path='Department,Name'/></itk:projection><itk:projection><itk:field path='JobInformation,Fusion_5fLegalEmployers_5fUDF,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,CreationDate'/></itk:projection><itk:projection><itk:field path='JobInformation,Organization,Name'/></itk:projection><itk:projection><itk:field path='JobInformation,PrimaryLocation,Name'/></itk:projection><itk:projection><itk:field path='JobInformation,PrimaryLocation,Parent,Parent,Parent,NetworkLocation,Name' /></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fASSGNMNT_5fLOC'/></itk:projection><itk:projection><itk:field path='JobInformation,JobField,Name'/></itk:projection><itk:projection><itk:field path='HiringManager,EmployeeID'/></itk:projection><itk:projection><itk:field path='JobInformation,RecruiterOwner,EmployeeID'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fPROJ_5fNAME'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fPROJ_5fSTAGE,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fEXPERIENCE_5fLEVEL'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fBUSINESS_5fMODEL,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fCLIENT_5fNAME'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fINDENT_5fSTATUS,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fINDENT_5fBILLING_5fSTATUS,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fDEMAND_5fTYPE,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fINDENT_5fCAT,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fINDENT_5fCLASSIFICATION,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fRM_5fBILLING_5fDATE'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fINDENT_5fEXTERNAL,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fEXT_5fMARKED_5fDATE'/></itk:projection> <itk:projection><itk:field path='JobInformation,XXPSL_5fINDENT_5fPROVIDING_5fDU,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fINDENT_5fPROVIDING_5fBU,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fINDENT_5fPRIORITY,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fSUBCON_5fALLWD,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fCLIENT_5fINTVW_5fREQ,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fL1_5fSTRATEGY,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fL2_5fSTRATEGY,Description'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fL1_5fINTERVIEWER'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fL2_5fINTERVIEWER'/></itk:projection><itk:projection><itk:field path='JobInformation,DescriptionInternalHTML'/></itk:projection> <itk:projection><itk:field path='JobInformation,DescriptionExternalHTML'/></itk:projection><itk:projection><itk:field path='JobInformation,XXPSL_5fINDENT_5fEXTERNAL,Description'/></itk:projection><itk:projection><itk:field path='State,ParentState,Description'/></itk:projection></itk:projections><itk:filterings><itk:filtering><itk:greaterThanOrEqual><itk:field path='JobInformation,LastModifiedDate' /><itk:date>$Date$</itk:date></itk:greaterThanOrEqual></itk:filtering><itk:filtering><itk:notEqual><itk:field path='State,ParentState,Description' /><itk:string>Draft</itk:string></itk:notEqual></itk:filtering></itk:filterings><itk:sortings><itk:sorting><itk:field path='ContestNumber'/></itk:sorting></itk:sortings></itk:query></itk:query><itk:attributes><!-- this specifies the server to return the first result page only (200 reqs max)--><itk:entry><itk:key>pageindex</itk:key><itk:value>$pageIndexValue$</itk:value></itk:entry></itk:attributes></itk:findPartialEntities></soapenv:Body></soapenv:Envelope>",
+   "jsonObjectMapping": {
+      "jobDetails": "e:JobInformation",
+      "department": "e:Department",
+      "location": "e:PrimaryLocation",
+      "cieloc": "e:CieLocation",
+      "parent": "e:Parent",
+      "hiringManager": "e:HiringManager",
+      "user": "e:User",
+      "udfs": "e:UDFs",
+      "udf": "e:UDF",
+      "udsElement": "e:UDSElement",
+      "description": "e:Description",
+      "text": "content",
+      "value": "e:value",
+      "name": "name",
+      "contestNumber": "e:ContestNumber",
+      "numberToHire": "e:NumberToHire",
+      "empId": "e:EmployeeID",
+      "hireType": "e:HireType",
+      "soap": "soap:Envelope",
+      "soapbody": "soap:Body",
+      "ns1": "ns1:findPartialEntitiesResponse",
+      "entities": "Entities",
+      "entity": "e:Entity",
+      "state": "e:State",
+      "reqState": "e:RequisitionState",
+      "parentstate": "e:ParentState",
+      "reqPar": "e:RequisitionParentState",
+      "recruiterOwner": "e:RecruiterOwner",
+      "recUser": "e:User",
+      "recValue": "e:EmployeeID",
+      "names": "e:Name",
+      "createdDate": "e:CreationDate"
+   },
+   "analyticsConfig": {
+      "urlExpiryLimit": 10370000,
+      "azureConfig": {
+         "accountName": "zwayamfilestorageaccount",
+         "accountKey": "24CxmvoX1HrNnf4FnQmBuNzFseKB362/6hPImzBQGklegbx2NLQcrWYKMaBiu4XzAfUtz1syoPo+G8qT/0dCNg==",
+         "containerName": "bgv"
+      },
+      "applyIdFieldNameCOnfig": {
+         "offeredCandidateCompensationDetails": "ApplicantId"
+      },
+      "fitmentConfig": {
+         "offeredCandidateCompensationDetails": {
+            "HireType": {
+               "fitmentFieldName": "TypeOfHire",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "JobGroup": {
+               "fitmentFieldName": "jobGroup",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "JobFamily": {
+               "fitmentFieldName": "jobFamily",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "Designation": {
+               "fitmentFieldName": "jobTitle",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "SalaryStructure": {
+               "fitmentFieldName": "salaryStructure",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "OfferType": {
+               "fitmentFieldName": "offertype",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "SkillCategory": {
+               "fitmentFieldName": "ssCAT",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "specialSkill": {
+               "fitmentFieldName": "specialSkill",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "CurrencyType": {
+               "fitmentFieldName": "currencyType",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "CosttoCompany": {
+               "fitmentFieldName": "ctc",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "OfferLocation": {
+               "fitmentFieldName": "loc",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "WorkerCategory": {
+               "fitmentFieldName": "workerCategory",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "TechnicalJob": {
+               "fitmentFieldName": "technicalJob",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "ReferralFee": {
+               "fitmentFieldName": "referralFee",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "DOJ": {
+               "fitmentFieldName": "joiningdate",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "ContractEndDate": {
+               "fitmentFieldName": "contractdate",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "RecruiterName": {
+               "fitmentFieldName": "recruiter",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "RecruiterEmail": {
+               "fitmentFieldName": "recruiterEmail",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "JoiningBonus": {
+               "fitmentFieldName": "jbyesno",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "JoiningBonusAmt": {
+               "fitmentFieldName": "jb",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "RelocationExpense": {
+               "fitmentFieldName": "relbyesno",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "ReloactionExpenseAmt": {
+               "fitmentFieldName": "relb",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "NPBuyout": {
+               "fitmentFieldName": "npyesno",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "NPBuyoutAmt": {
+               "fitmentFieldName": "np",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "RetentionBonus": {
+               "fitmentFieldName": "retbyesno",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "RetentionBonusAmt": {
+               "fitmentFieldName": "retb",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "RetentionBonusPeriod": {
+               "fitmentFieldName": "retperiod1",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "PSISpecialAllowance": {
+               "fitmentFieldName": "sayesno",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "PSISpecialAllowanceType": {
+               "fitmentFieldName": "satype",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "PSIFrequency": {
+               "fitmentFieldName": "safreq",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "PSINote": {
+               "fitmentFieldName": "saNote",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "PSIPartOfCTC": {
+               "fitmentFieldName": "partOfCTC",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "HourlyRate": {
+               "fitmentFieldName": "expBillingRate",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "SemiMonthlyPSI": {
+               "fitmentFieldName": "SemiMonthly_PSI",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "AnnualGrossSalary": {
+               "fitmentFieldName": "AnnualGrossCalc",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "AnnualIndividualPerformanceBonus": {
+               "fitmentFieldName": "AnnualIPB",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "SpecialAnnualVariableComponent": {
+               "fitmentFieldName": "SpAnnualVarComp",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "AnnualTargetAchievementBonus": {
+               "fitmentFieldName": "AnnualTAB",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "AnnualKRABasedBonus": {
+               "fitmentFieldName": "AnnualKRA",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "PSISpecialAllowAmount": {
+               "fitmentFieldName": "saAmount",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "foodInsurance": {
+               "fitmentFieldName": "foodInsurance",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "SSAThreshold": {
+               "fitmentFieldName": "ssaThreshold",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "MinimumSSA": {
+               "fitmentFieldName": "ssaMin",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "HighCostCityAllowance": {
+               "fitmentFieldName": "highccAllow",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "OtherBonusSpecialSkillAllowance": {
+               "fitmentFieldName": "ssAllow",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "OtherBonusHighCostCityAllowance": {
+               "fitmentFieldName": "hccAllow",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "CTCToBeDistributed": {
+               "fitmentFieldName": "agross",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "MonthlyCTC": {
+               "fitmentFieldName": "mctc",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "CPBPercentage": {
+               "fitmentFieldName": "cpbper",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "IPBPercentage": {
+               "fitmentFieldName": "ipbper",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "MonthlyCPB": {
+               "fitmentFieldName": "mcpb",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "TotalCPB": {
+               "fitmentFieldName": "totcpb",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "TotalIPB": {
+               "fitmentFieldName": "totipb",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "SpecialAnnualVariableComponentPercentage": {
+               "fitmentFieldName": "SpAnnualVarCompPer",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "BasicSalary": {
+               "fitmentFieldName": "basic",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "HRAPercentage": {
+               "fitmentFieldName": "hraper",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "HouseRentAllowance": {
+               "fitmentFieldName": "hra",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "LTAPercentage": {
+               "fitmentFieldName": "ltaper",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "LeaveTravelAllowance": {
+               "fitmentFieldName": "lta",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "GratuityPercentage": {
+               "fitmentFieldName": "gratper",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "ProvisionforGratuity": {
+               "fitmentFieldName": "grat",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "SP2Percentage": {
+               "fitmentFieldName": "sp2per",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "SpecialPay2": {
+               "fitmentFieldName": "sp2",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "SP3Percentage": {
+               "fitmentFieldName": "sp3per",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "SpecialPay3": {
+               "fitmentFieldName": "sp3",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "PerformancePayPercentage": {
+               "fitmentFieldName": "performPayper",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "PerformancePay": {
+               "fitmentFieldName": "performPay",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "ExGratiaStatBonusPercentage": {
+               "fitmentFieldName": "statBonusper",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "StatutoryBonus": {
+               "fitmentFieldName": "statBonus",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "SP1Percentage": {
+               "fitmentFieldName": "sp1per",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "SpecialPay1": {
+               "fitmentFieldName": "sp1",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "UpkeepAllowance": {
+               "fitmentFieldName": "upkeepAllow",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "TotalPaidMonthly": {
+               "fitmentFieldName": "mtotal",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "TotalYearly": {
+               "fitmentFieldName": "ytotal",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "AnnualGross": {
+               "fitmentFieldName": "agsal",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "CalculatedCTC": {
+               "fitmentFieldName": "FinalCTC",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "AnnualBasic": {
+               "fitmentFieldName": "PSIannualbasic",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "GrossMarginPSI": {
+               "fitmentFieldName": "grossMargin",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "Revenuepermonth": {
+               "fitmentFieldName": "revenuepm",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "TotalBuyRate": {
+               "fitmentFieldName": "totalBuyRate",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "BuyRatebyNoofhours": {
+               "fitmentFieldName": "buyRateTemp",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "BuyRateperhour": {
+               "fitmentFieldName": "buyRatePerHour",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "TotalDirectCost": {
+               "fitmentFieldName": "totDirectCostSC",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "GrossProfit": {
+               "fitmentFieldName": "grossProfitSC",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "GrossMarginSC": {
+               "fitmentFieldName": "grossMarginSC",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "RevenuepermonthUS": {
+               "fitmentFieldName": "revenuepmus",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "TotalBuyRateUS": {
+               "fitmentFieldName": "totalBuyRateus",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "TotalDirectCostUS": {
+               "fitmentFieldName": "totDirectCostSCus",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "GrossMarginSCUS": {
+               "fitmentFieldName": "grossMarginSCus",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "GrossProfitUS": {
+               "fitmentFieldName": "gpUS",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "EQYear": {
+               "fitmentFieldName": "eqYear",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "JOINING_HR_NAME": {
+               "fitmentFieldName": "joiningHR",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+            "JOINING_HR_NO": {
+               "fitmentFieldName": "joiningHRemail",
+               "defaultValue": "",
+               "format": "remove comma"
+            },
+	    "InternationalWorker": {
+               "fitmentFieldName": "internationalWorker",
+               "defaultValue": "",
+               "format": "remove comma"
+            }
+         }
+      },
+      "documentConfig": {
+         "offeredCandidateDocumentDetails": [
+            {
+               "documentType": "All Request Documents",
+               "applyIdKey": "ApplyId",
+               "query": "SELECT * FROM( SELECT duh.applicant_id AS applyId ,CONCAT ( adr.id ,'-' ,adr.file_name) AS fileName ,dm.document_name as fileType ,duh.lastUpdatedTime AS lastUpdatedTime FROM c3_documents_upload_history duh INNER JOIN c3_applicant_document_request adr ON adr.applicant_id = duh.applicant_id INNER JOIN c3_documents_master dm ON dm.id = duh.document_id WHERE adr.document_id = duh.document_id AND adr.is_submitted = 1 AND duh.STATUS = 1 AND duh.applicant_id = [applyId] ) z;"
+            },
+            {
+               "documentType": "offer document",
+               "documentPath": "/var/www/zwayam/uploads/offerLetters/",
+               "variableName": "OfferLetter",
+               "fileUpdatedTimeStampVariableName": "offerLetterLastUpdatedTime"
+            }
+         ]
+      },
+      "arrayRecordConfig": {
+         "offeredCandidateDetails": [
+            {
+               "actualfieldName": "profile.graduationQualifications",
+               "responseFieldName": "educationDetails",
+               "fieldsToPick": {
+                  "School": "universityName",
+                  "DegreeAquired": "degree",
+                  "Country": "country",
+                  "AverageGrade": "cgpa",
+                  "YearAquired": "yearOfPass"
+               },
+               "fieldsWithDateFormat": [
+                  {
+                     "fieldName": "Emplr1StartDate",
+                     "initialFormat": "mongoDateFormat",
+                     "finalFormat": "yyyy-dd-MM"
+                  },
+                  {
+                     "fieldName": "Emplr1Enddate",
+                     "initialFormat": "mongoDateFormat",
+                     "finalFormat": "yyyy-dd-MM"
+                  }
+               ]
+            },
+            {
+               "actualfieldName": "profile.schoolingDetails",
+               "responseFieldName": "employmentDetails",
+               "fieldsToPick": {
+                  "PreviousEmployerName": "discipline",
+                  "PreviousJobTitle": "program",
+                  "StartDate": "from",
+                  "Enddate": "to",
+                  "EmployerPhone": "landlineNumber",
+                  "ReasonforLiving": "content"
+               },
+               "fieldsWithDateFormat": [
+                  {
+                     "fieldName": "StartDate",
+                     "initialFormat": "mongoDateFormat",
+                     "finalFormat": "yyyy-dd-MM"
+                  },
+                  {
+                     "fieldName": "Enddate",
+                     "initialFormat": "mongoDateFormat",
+                     "finalFormat": "yyyy-dd-MM"
+                  }
+               ]
+            },
+            {
+               "actualfieldName": "profile.sourceDetails",
+               "responseFieldName": "certificationDetails",
+               "fieldsToPick": {
+                  "Title": "title",
+                  "Institute": "companyName",
+                  "courseType": "experience",
+                  "Duration": "currentStatus"
+               },
+               "fieldsWithDateFormat": [
+                  {
+                     "fieldName": "Emplr1StartDate",
+                     "initialFormat": "mongoDateFormat",
+                     "finalFormat": "yyyy-dd-MM"
+                  },
+                  {
+                     "fieldName": "Emplr1Enddate",
+                     "initialFormat": "mongoDateFormat",
+                     "finalFormat": "yyyy-dd-MM"
+                  }
+               ]
+            }
+         ]
+      },
+      "analyticsAPIQueries": {
+         "createCandidateInTaleo": "SELECT * FROM( SELECT ja.candidateId AS 'ProfileID' ,ja.email_id AS 'EmailId' ,ja.first_name AS 'FirstName' ,'' AS 'MiddleName' ,ja.last_name AS 'LastName' ,ja.phone_no AS 'Mobile' ,ifnull(date_format(ja.date_of_birth, '%Y-%m-%d'), '') AS 'DOB' ,'' AS 'SSNAadhar' ,ifNull(replace(json_extract(applyFieldsObject, '$.currentCtc'), '\"', ''), '') AS 'CurrentCTC' ,ifNull(replace(json_extract(applyFieldsObject, '$.expectedCtc'), '\"', ''), '') AS 'ExpectedCTC' ,'' AS 'Title' ,ifNull(replace(json_extract(applyFieldsObject, '$.experience'), '\"', ''), '') AS 'TotalExp' ,ifNull(replace(json_extract(applyFieldsObject, '$.trexp'), '\"', ''), '') AS 'RelExp' ,'' AS 'PrimaySkills' ,'' AS 'ProfileType' ,( CASE source WHEN 'Partner' THEN ja.referrer_email_id ELSE '' END) AS 'VendorEmail' ,( CASE source WHEN 'EmployeeReferral' THEN ja.referrer_email_id ELSE '' END ) AS 'EREmail' ,'' AS 'CreatedBy' ,ja.date_applied AS 'DateApplied' ,ja.id AS 'ApplicantId' ,( SELECT reference_number FROM c3_job j WHERE j.id = ja.job_id ) AS 'DemandId' ,'' AS 'PermZipCode' ,'' AS 'PermAddress' ,'' AS 'PermAddress2' ,'' AS 'PermCity' ,'' AS 'CurrZipCode' ,'' AS 'CurrAddress' ,'' AS 'CurrAddress2' ,'' AS 'CurrCity' FROM c3_job_application ja WHERE ja.company_id = 14977 AND ja.date_applied >= '[lastSuccessSyncDate]' AND ja.job_id <> - 1 ORDER BY id DESC ) z",
+         "candidateRecruitmentSummary": "SELECT * FROM( SELECT aa.applyId AS ApplicantId ,ja.candidateId AS 'ProfileID' ,( CASE CONCAT ( aa.subflowname ,aa.actioncode) WHEN 'ScreeningFlowReject' THEN 'Rejected' WHEN 'ScreeningFlowPut On Hold' THEN 'On Hold' WHEN 'SelectionSubFlowCNO' THEN 'Could Not Offer' WHEN 'ScreeningFlowRegret' THEN 'Not Selected' WHEN 'SelectionSubFlowSelect' THEN 'Final Selected' WHEN 'ScreeningFlowDebrief Reject' THEN 'Recruiter Screening Rejected' WHEN 'ScreeningFlowDebrief Select' THEN 'Recruiter Screening Selected' WHEN 'ScreeningFlowConduct Assessment' THEN 'Assessment Conducted' WHEN 'ScreeningFlowHM Screening' THEN 'HM Screening Pending' WHEN 'ScreeningFlowHM Shortlist' THEN 'HM Shortlisted' WHEN 'ScreeningFlowHM On Hold' THEN 'HM On Hold' WHEN 'ScreeningFlowHM Rejected' THEN 'HM Rejected' WHEN 'L1Schedule Multipart Interview' THEN 'L1 - Interview Scheduled' WHEN 'L2Schedule Multipart Interview' THEN 'L2 - Interview Scheduled' WHEN 'L3Schedule Multipart Interview' THEN 'L3 - Interview Scheduled' WHEN 'HRSchedule Multipart Interview' THEN 'HR - Interview Scheduled' WHEN 'ClientSchedule Multipart Interview' THEN 'Client - Interview Scheduled' WHEN 'L1Interview Select' THEN 'L1 - Interview Selected' WHEN 'L2Interview Select' THEN 'L2 - Interview Selected' WHEN 'L3Interview Select' THEN 'L3 - Interview Selected' WHEN 'HRInterview Select' THEN 'HR - Interview Selected' WHEN 'ClientInterview Select' THEN 'Client - Interview Selected' WHEN 'L1Interview Reject' THEN 'L1 - Interview Rejected' WHEN 'L2Interview Reject' THEN 'L2 - Interview Rejected' WHEN 'L3Interview Reject' THEN 'L3 - Interview Rejected' WHEN 'HRInterview Reject' THEN 'HR - Interview Rejected' WHEN 'ClientInterview Reject' THEN 'Client - Interview Rejected' WHEN 'OfferWorkflowCreate Fitment' THEN 'Fitment Initiated' WHEN 'OfferWorkflowFitment L1 Approve' THEN 'Fitment L1 Approved' WHEN 'OfferWorkflowFitment L2 Approve' THEN 'Fitment L2 Approved' WHEN 'OfferWorkflowFitment L3 Approve' THEN 'Fitment L3 Approved' WHEN 'OfferWorkflowSend For Approvals' THEN 'Fitment L1 Approval Pending' WHEN 'OfferWorkflowFitment L1 Reject' THEN 'Fitment L1 Rejected' WHEN 'OfferWorkflowFitment L2 Reject' THEN 'Fitment L2 Rejected' WHEN 'OfferWorkflowFitment L3 Reject' THEN 'Fitment L3 Rejected' WHEN 'OfferWorkflowSend Offer' THEN 'Offer Sent' WHEN 'OfferWorkflowAccept Offer' THEN 'Offer Accepted' WHEN 'OfferWorkflowReject Offer' THEN 'Offer Rejected' WHEN 'OfferWorkflowMark As Joined' THEN 'Joined' WHEN 'OfferWorkflowMark As not Joined' THEN 'Not Joined' WHEN 'OfferWorkflowRevoke Offer' THEN 'Offer Revoked' ELSE aa.actioncode END ) AS 'Status' ,aa.actedOn AS 'ModifiedOn' ,( SELECT u.email_id FROM c3_user u WHERE u.id = aa.actedBy ) AS 'ModifiedBy' ,( SELECT reference_number FROM c3_job j WHERE j.id = ja.job_id ) AS 'DemandId' FROM ApplyAction aa INNER JOIN c3_job_application ja ON ja.id = aa.applyid WHERE ja.company_id = 14977 AND aa.actedOn >= '[lastSuccessSyncDate]' AND ja.current_status IN ( 'Pending' ,'Recruiter Screening Rejected' ,'Recruiter Screening Selected' ,'Assessment Conducted' ,'Rejected' ,'HM Screening Pending' ,'HM Rejected' ,'HM Shortlisted' ,'HM On Hold' ,'L1-Interview Rejected' ,'L1-Interview Scheduled' ,'L1-Interview Selected' ,'L2-Interview Rejected' ,'L2-Interview Scheduled' ,'L2-Interview Selected' ,'L3-Interview Rejected' ,'L3-Interview Scheduled' ,'L3-Interview Selected' ,'Client-Interview Scheduled' ,'Client-Interview Selected' ,'Client-Interview Rejected' ,'HR-Interview Rejected' ,'HR-Interview Scheduled' ,'HR-Interview Selected' ,'Fitment Initiated' ,'Fitment L1 Rejected' ,'Fitment L1 Approved' ,'Offer Sent' ,'Offer Accepted' ,'Offer Rejected' ,'Offer Withdrawn' ,'Onboarding Initaited' ,'Not Joined' ,'Joined' ,'Final Selected' ,'Could Not Offer' ,'On Hold' ,'Not Selected' ,'Fitment L1 Pending' ,'Offer Modified' ,'Fitment L2 Approved' ,'Fitment L2 Rejected' ,'Fitment L3 Approved' ,'Fitment L3 Rejected' ,'On-boarding Initiated' ) AND CONCAT ( aa.subflowname ,aa.actioncode ) IN ( 'ScreeningFlowReject' ,'Rejected' ,'ScreeningFlowPut On Hold' ,'On Hold' ,'SelectionSubFlowCNO' ,'Could Not Offer' ,'ScreeningFlowRegret' ,'Not Selected' ,'SelectionSubFlowSelect' ,'Final Selected' ,'ScreeningFlowDebrief Reject' ,'Recruiter Screening Rejected' ,'ScreeningFlowDebrief Select' ,'Recruiter Screening Selected' ,'ScreeningFlowConduct Assessment' ,'Assessment Conducted' ,'ScreeningFlowHM Screening' ,'HM Screening Pending' ,'ScreeningFlowHM Shortlist' ,'HM Shortlisted' ,'ScreeningFlowHM On Hold' ,'HM On Hold' ,'ScreeningFlowHM Rejected' ,'HM Rejected' ,'L1Schedule Multipart Interview' ,'L1 - Interview Scheduled' ,'L2Schedule Multipart Interview' ,'L2 - Interview Scheduled' ,'L3Schedule Multipart Interview' ,'L3 - Interview Scheduled' ,'HRSchedule Multipart Interview' ,'HR - Interview Scheduled' ,'ClientSchedule Multipart Interview' ,'Client - Interview Scheduled' ,'L1Interview Select' ,'L1 - Interview Selected' ,'L2Interview Select' ,'L2 - Interview Selected' ,'L3Interview Select' ,'L3 - Interview Selected' ,'HRInterview Select' ,'HR - Interview Selected' ,'ClientInterview Select' ,'Client - Interview Selected' ,'L1Interview Reject' ,'L1 - Interview Rejected' ,'L2Interview Reject' ,'L2 - Interview Rejected' ,'L3Interview Reject' ,'L3 - Interview Rejected' ,'HRInterview Reject' ,'HR - Interview Rejected' ,'ClientInterview Reject' ,'Client - Interview Rejected' ,'OfferWorkflowCreate Fitment' ,'Fitment Initiated' ,'Fitment L1 Approved' ,'Fitment L2 Approved' ,'Fitment L3 Approved' ,'OfferWorkflowFitment L1 Reject' ,'Fitment L1 Rejected' ,'OfferWorkflowFitment L2 Reject' ,'Fitment L2 Rejected' ,'OfferWorkflowFitment L3 Reject' ,'Fitment L3 Rejected' ,'OfferWorkflowSend Offer' ,'Offer Sent' ,'OfferWorkflowAccept Offer' ,'Offer Accepted' ,'OfferWorkflowReject Offer' ,'Offer Rejected' ,'OfferWorkflowAccept Offer' ,'On-boarding Initiated' ,'OfferWorkflowMark As Joined' ,'Joined' ,'OfferWorkflowMark As not Joined' ,'Not Joined' ,'OfferWorkflowFitment L1 Approve' ,'OfferWorkflowFitment L2 Approve' ,'OfferWorkflowFitment L3 Approve' ,'OfferWorkflowSend For Approvals' ,'OfferWorkflowRevoke Offer' ) UNION SELECT ja.id AS ApplicantId ,ja.candidateId ProfileID ,'Shortlisted to another job' ,an.lastUpdatedTime ModifiedOn ,( SELECT u.email_id FROM c3_user u WHERE u.company_id = 14977 AND u.id = an.added_by ) AS ModifiedBy ,( SELECT j.reference_number FROM c3_job j WHERE j.job_code = left(substring_index(an.tag_value, '(', - 1), locate(')', substring_index(an.tag_value, '(', - 1)) - 1) AND j.company_id = 14977 ) AS DemandId FROM c3_job_application ja INNER JOIN c3_application_notes an ON ja.id = an.applicant_id WHERE an.tag_name LIKE '%is shortlisted for job%' AND ja.company_id = 14977 AND an.added_on >= '[lastSuccessSyncDate]' ) z",
+         "offeredCandidateDetails": "SELECT * FROM( SELECT ja.id AS applyId ,ja.id AS ApplicantId ,ja.candidateId AS 'ProfileID' ,ifnull(OFF.joining_date, '') AS ProposedStartDate ,( SELECT rfv.value FROM c3_requisition_field_values rfv INNER JOIN c3_requisition_fields rf ON rf.id = rfv.requisition_field_id WHERE rfv.requisition_id = ja.job_id AND rf.field_name = 'Legal Employer') AS LegalEmployer ,ja.last_name AS LastName ,ja.first_name AS FirstName ,ifnull((REPLACE(JSON_EXTRACT(OFF.customFields, replace(replace(JSON_SEARCH(OFF.customFields, 'one', 'joiningdate'), '\"', ''), 'fieldVariableName', 'fieldValue')), '\"', '')), '') AS DateofHire ,ifnull((REPLACE(JSON_EXTRACT(OFF.customFields, replace(replace(JSON_SEARCH(OFF.customFields, 'one', 'sal'), '\"', ''), 'fieldVariableName', 'fieldValue')), '\"', '')), '')  as Salutation,'HOME' AS AddressType ,'' AS AddressLine2 ,ja.phone_no AS PhoneNumber ,ja.email_id AS EmailAddress ,'' AS PrefferedJobFamily ,( SELECT rfv.value FROM c3_requisition_field_values rfv INNER JOIN c3_requisition_fields rf ON rf.id = rfv.requisition_field_id WHERE rfv.requisition_id = ja.job_id AND rf.field_name = 'Business Unit' ) AS BusinessUnit ,( SELECT rfv.value FROM c3_requisition_field_values rfv INNER JOIN c3_requisition_fields rf ON rf.id = rfv.requisition_field_id WHERE rfv.requisition_id = ja.job_id AND rf.field_name = 'Department Unit' ) AS Department ,( SELECT rfv.value FROM c3_requisition_field_values rfv INNER JOIN c3_requisition_fields rf ON rf.id = rfv.requisition_field_id WHERE rfv.requisition_id = ja.job_id AND rf.field_name = 'Assignment Location' ) AS AssignmentLocation ,Replace(REPLACE(JSON_EXTRACT(OFF.customFields, REPLACE(REPLACE(JSON_SEARCH(OFF.customFields, 'one', 'TypeOfHire'), '\"', ''), 'fieldVariableName', 'fieldValue')), '\"', ''), ',', '') AS ProposedPersonType ,( SELECT j.reference_number FROM c3_job j WHERE j.id = ja.job_id ) AS JobPosition ,ifnull(( SELECT j.job_title FROM c3_job j WHERE j.id = ja.job_id ), '') AS JobName ,REPLACE(JSON_EXTRACT(OFF.customFields, replace(replace(JSON_SEARCH(OFF.customFields, 'one', 'grade'), '\"', ''), 'fieldVariableName', 'fieldValue')), '\"', '') AS Grade ,REPLACE(JSON_EXTRACT(OFF.customFields, replace(replace(JSON_SEARCH(OFF.customFields, 'one', 'loc'), '\"', ''), 'fieldVariableName', 'fieldValue')), '\"', '') AS Location ,REPLACE(JSON_EXTRACT(OFF.customFields, replace(replace(JSON_SEARCH(OFF.customFields, 'one', 'jobTitle'), '\"', ''), 'fieldVariableName', 'fieldValue')), '\"', '') AS Designation ,ifnull(( SELECT p.empid FROM person p WHERE p.companyid = 14977 AND p.email = ( SELECT j.hiring_manager FROM c3_job j WHERE j.id = ja.job_id ) ), '') AS ManagerID ,REPLACE(IFNULL((REPLACE(JSON_EXTRACT(OFF.customFields, REPLACE(REPLACE(JSON_SEARCH(OFF.customFields, 'one', 'workerCategory'), '\"', ''), 'fieldVariableName', 'fieldValue')), '\"', '')), 0), ',', '') AS 'ProposedWorkerType' ,'Home Mobile Phone' AS 'PhoneType' ,'Home Email' AS 'EmailidType' ,'' AS 'HighestEducationDetails' ,'' AS 'PassportNumber' ,'' AS 'PassportExpirationDate' ,'' AS 'CertificationLicense' FROM c3_job_application ja INNER JOIN c3_offer_and_fitment OFF ON OFF.applicant_id = ja.id WHERE ja.company_id = 14977 AND OFF.is_latest_fitment = 1 AND ja.id IN ( SELECT aa.applyId FROM ApplyAction aa WHERE aa.companyId = 14977 AND aa.actedOn >= '[lastSuccessSyncDate]' AND ( aa.actioncode = 'Accept Offer' OR ( ( SELECT count(*) > 0 AS result FROM c3_offer_and_fitment onf1 ,c3_job_application ja1 WHERE ( SELECT REPLACE(JSON_EXTRACT(onf1.customfields, REPLACE(REPLACE(Json_search(onf1.customfields, 'one', 'approvalselector'), '\"', ''), 'fieldVariableName', 'fieldValue')), '\"', '') ) = 4 AND ja1.company_id = 14977 AND ja1.id = ja.id AND ja1.id = onf1.applicant_id AND onf1.is_latest_fitment = 1 ) AND aa.actioncode = 'Fitment L2 Approve' ) ) ORDER BY aa.id DESC ) ) z",
+         "offeredCandidateDocumentDetails": "SELECT * FROM( SELECT ja.id ApplyId ,OFF.offerFileName AS OfferLetter ,OFF.modified_Date AS offerLetterLastUpdatedTime FROM c3_job_application ja INNER JOIN c3_offer_and_fitment OFF ON OFF.applicant_id = ja.id AND OFF.is_latest_fitment = 1 WHERE ( ja.id IN ( SELECT of1.applicant_id FROM c3_offer_and_fitment of1 WHERE of1.lastUpdatedTime >= '[lastSuccessSyncDate]') OR ja.id IN ( SELECT duh.applicant_id FROM c3_documents_upload_history duh WHERE duh.lastUpdatedTime >= '[lastSuccessSyncDate]' ) ) AND ja.company_id = 14977 AND ja.id IN ( SELECT aa.applyId FROM ApplyAction aa WHERE aa.companyId = 14977 AND ( aa.actioncode = 'Accept Offer' OR ( ( SELECT count(*) > 0 AS result FROM c3_offer_and_fitment onf1 ,c3_job_application ja1 WHERE ( SELECT REPLACE(JSON_EXTRACT(onf1.customfields, REPLACE(REPLACE(Json_search(onf1.customfields, 'one', 'approvalselector'), '\"', ''), 'fieldVariableName', 'fieldValue')), '\"', '') ) = 4 AND ja1.company_id = 14977 AND ja1.id = onf1.applicant_id AND onf1.is_latest_fitment = 1 ) AND aa.actioncode = 'Fitment L2 Approve' ) ) ORDER BY aa.id DESC ) ) z",
+         "offeredCandidateCompensationDetails": "SELECT * FROM( SELECT ja.Id AS ApplicantId ,ja.candidateId AS 'ProfileID' ,j.reference_number AS RequisitionID ,ja.id AS ApplicationID ,OFF.grade AS Grade ,( SELECT u.employeeId FROM c3_user u WHERE u.email_id = ( SELECT ( CASE WHEN LOCATE('\"fieldName\":\"Recruiter Email\",\"fieldValue\"', OFF.customFields) > 0 THEN REPLACE(SUBSTRING(OFF.customFields, LOCATE('\"fieldName\":\"Recruiter Email\"', OFF.customFields) + 44, LOCATE('\"', OFF.customFields, LOCATE('\"fieldName\":\"Recruiter Email\"', OFF.customFields) + 44) - (LOCATE('\"fieldName\":\"Recruiter Email\"', OFF.customFields) + 44)), ',', '') ELSE '0' END) ) AND u.company_id = 14977 AND u.ROLE = 1 AND u.STATUS = 1 ) AS RecruiterId ,j.reference_number AS 'IndentId' ,( SELECT actedon FROM ApplyAction ax WHERE ax.applyid = ja.id AND ax.actioncode = 'Send Offer' ORDER BY ax.id DESC LIMIT 1 ) AS 'OfferDate' ,( SELECT actedon FROM ApplyAction ax WHERE ax.applyid = ja.id AND ax.actioncode = 'Accept Offer' ORDER BY ax.id DESC LIMIT 1 ) AS 'OfferAcceptedDate' FROM c3_job_application ja INNER JOIN c3_offer_and_fitment OFF ON OFF.applicant_id = ja.id INNER JOIN c3_job j ON j.id = ja.job_id WHERE ja.company_id = 14977 AND OFF.is_latest_fitment = 1 AND ja.id IN ( SELECT aa.applyId FROM ApplyAction aa WHERE aa.companyId = 14977 AND aa.actedOn >= '[lastSuccessSyncDate]' AND ( aa.actioncode = 'Send Offer' OR ( ( SELECT COUNT(*) > 0 AS result FROM c3_offer_and_fitment onf1 ,c3_job_application ja1 WHERE ( SELECT ( CASE WHEN LOCATE('\"fieldName\":\"Approval Selector\",\"fieldValue\"', OFF.customFields) > 0 THEN REPLACE(SUBSTRING(OFF.customFields, LOCATE('\"fieldName\":\"Approval Selector\"', OFF.customFields) + 46, LOCATE('\"', OFF.customFields, LOCATE('\"fieldName\":\"Approval Selector\"', OFF.customFields) + 46) - (LOCATE('\"fieldName\":\"Approval Selector\"', OFF.customFields) + 46)), ',', '') ELSE '0' END ) ) = 4 AND ja1.company_id = 14977 AND ja1.id = ja.id AND ja1.id = onf1.applicant_id AND onf1.is_latest_fitment = 1 ) AND aa.actioncode = 'Fitment L2 Approve' ) ) ORDER BY aa.id DESC ) ) z"
+      },
+      "bodyParamsValidationMap": {
+         "createCandidateInTaleo": {
+            "lastSuccessSyncDate": "isDate"
+         },
+         "candidateRecruitmentHistory": {
+            "lastSuccessSyncDate": "isDate"
+         }
+      },
+      "analyticsMongoPiFieldNameMap": {
+         "offeredCandidateDetails": {
+            "AddressState": "profile.employmentInformation.state1",
+            "Gender": "profile.candidateDetails.gender",
+            "DateofBirth": "profile.candidateDetails.dateOfBirth",
+            "Skilll": "profile.achievementsAndHobbies.skills",
+            "primaryorCoreSkill": "profile.achievementsAndHobbies.primarySkill",
+            "secondarySkill": "profile.achievementsAndHobbies.secondSkill",
+            "domainSkill": "profile.achievementsAndHobbies.domain",
+            "AddressCountry": "profile.employmentInformation.count",
+            "AddressZipcode": "profile.employmentInformation.pinCode",
+            "AddressCity": "profile.employmentInformation.cit",
+            "AddressLine1": "profile.employmentInformation.address1",
+            "MaritalStatus": "profile.candidateDetails.maritalStatus",
+            "Citizenship": "profile.candidateDetails.citizenship",
+            "PassportIssuingCountry": "profile.candidateDetails.citizenship",
+            "MiddleName": "profile.candidateDetails.middleName",
+            "FullNameasperAadhar": "profile.candidateDetails.fullName",
+            "PAN": "profile.candidateDetails.panNumber",
+            "AadharNumber": "profile.candidateDetails.aadhar",
+            "applyId": "applyID"
+         }
+      },
+      "analyticsMongoPiFields": {
+         "offeredCandidateDetails": [
+            "profile.employmentInformation.state1",
+            "profile.candidateDetails.gender",
+            "profile.candidateDetails.dateOfBirth",
+            "profile.graduationQualifications",
+            "profile.schoolingDetails",
+            "profile.achievementsAndHobbies.skills",
+            "profile.achievementsAndHobbies.primarySkill",
+            "profile.achievementsAndHobbies.secondSkill",
+            "profile.achievementsAndHobbies.domain",
+            "profile.candidateDetails.gender",
+            "profile.candidateDetails.dateOfBirth",
+            "profile.employmentInformation.count",
+            "profile.employmentInformation.pinCode",
+            "profile.employmentInformation.cit",
+            "profile.employmentInformation.address1",
+            "profile.candidateDetails.maritalStatus",
+            "profile.candidateDetails.citizenship",
+            "profile.candidateDetails.middleName",
+            "profile.sourceDetails",
+            "profile.candidateDetails.fullName",
+            "profile.candidateDetails.panNumber",
+            "profile.candidateDetails.aadhar",
+            "applyID"
+         ]
+      }
+   }
+}

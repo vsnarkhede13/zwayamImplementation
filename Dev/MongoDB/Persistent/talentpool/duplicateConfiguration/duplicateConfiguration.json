@@ -1,0 +1,11 @@
+{
+    "companyId" : 14977,
+    "withOutCombinations" : [ 
+        "name", 
+        "phoneNo"
+    ],
+    "withCombinations" : [ 
+        "name,phoneNo", 
+        "name"
+    ]
+}

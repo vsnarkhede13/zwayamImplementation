@@ -1,0 +1,136 @@
+{
+    "name": "DashBoardDrillDown",
+    "type": "14977",
+    "piLocation": "",
+    "displayStatusDetails": {
+        "Applies": [
+            ""
+        ],
+        "Pending": [
+            "Pending"
+        ],
+        "ShortLists": [
+            "Recruiter Screening Selected",
+            "HM Shortlisted"
+        ],
+        "Shortlists": [
+            "Recruiter Screening Selected",
+            "HM Shortlisted"
+        ],
+        "Screening": [
+            "Recruiter Screening Selected",
+            "HM Shortlisted"
+        ],
+        "Assessments": [
+            "Assessment Conducted"
+        ],
+        "Interviews": [
+            "L1-Interview Scheduled",
+            "L1-Interview Selected",
+            "L1-Interview Rejected",
+            "L2-Interview Scheduled",
+            "L2-Interview Selected",
+            "L2-Interview Rejected",
+            "L3-Interview Scheduled",
+            "L3-Interview Selected",
+            "L3-Interview Rejected",
+            "HR-Interview Scheduled",
+            "HR-Interview Selected",
+            "HR-Interview Rejected",
+            "Client-Interview Scheduled",
+            "Client-Interview Selected",
+            "Client-Interview Rejected",
+            "Final Selected"
+        ],
+        "L1 Interview": [
+            "L1-Interview Scheduled",
+            "L1-Interview Selected",
+            "L1-Interview Rejected"
+        ],
+        "L2 Interview": [
+            "L2-Interview Scheduled",
+            "L2-Interview Selected",
+            "L2-Interview Rejected"
+        ],
+        "L3 Interview": [
+            "L3-Interview Scheduled",
+            "L3-Interview Selected",
+            "L3-Interview Rejected"
+        ],
+        "Client Interview": [
+            "Client-Interview Scheduled",
+            "Client-Interview Selected",
+            "Client-Interview Rejected"
+        ],
+        "Rejects": [
+            "Technical Round-Interview Rejected",
+            "HR Round-Interview Rejected",
+            "Cultural Round-Interview Rejected",
+            "Optional Round 1-Interview Rejected",
+            "Optional Round 2-Interview Rejected",
+            "Optional Round 3-Interview Rejected",
+            "Optional Round 4-Interview Rejected",
+            "Optional Round 5-Interview Rejected",
+            "Not Selected",
+            "HM Rejected",
+            "Rejected"
+        ],
+        "Final Selects": [
+            "Selected"
+        ],
+        "Offers": [
+            "Fitment Initiated",
+            "Fitment L1 Pending",
+            "Fitment L1 Approved",
+            "Fitment L1 Rejected",
+            "Fitment L2 Pending",
+            "Fitment L2 Approved",
+            "Fitment L2 Rejected",
+            "Fitment L3 Pending",
+            "Fitment L3 Approved",
+            "Fitment L3 Rejected",
+            "Offer Sent",
+            "Offer Accepted",
+            "To be Hired",
+            "Offer Withdrawn",
+            "Offer Accepted",
+            "Offer Rejected",
+            "On-boarding Initiated",
+            "Joined",
+            "Not Joined"
+        ],
+        "Offers Declined": [
+            "Offer Rejected"
+        ],
+        "Selected": [
+            "Final Selected"
+        ],
+        "Offered": [
+            "Offer Sent"
+        ],
+        "Offer Accepted": [
+            "Offer Accepted",
+            "To be Hired"
+        ],
+        "Offer Rejected": [
+            "Offer Rejected"
+        ],
+        "Joins": [
+            "Joined"
+        ],
+        "CNO": [
+            "Could Not Offer"
+        ]
+    },
+    "statesInWhichPIFormAvailable": [],
+    "uiTermMappings": {
+        "jobs": "jobs",
+        "job": "job",
+        "Department": "Department",
+        "openPosition": true,
+        "Recruiter": false,
+        "JobDescription": "Job Description",
+        "showRank": false,
+        "showCompanyPolicy": true
+    }
+}

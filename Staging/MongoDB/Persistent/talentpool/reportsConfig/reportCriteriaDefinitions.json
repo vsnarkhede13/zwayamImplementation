@@ -1,0 +1,1259 @@
+{
+    "name": "reportCriteriaDefinitions",
+    "companyId": "15174",
+    "reportToShow": [
+        {
+            "id": 1,
+            "name": "Hiring Progress",
+            "filterToSelect": [
+                "timePeriodSelect",
+                "simulFilter",
+                "simulFilterList",
+                "jobStatus"
+            ],
+            "htmlType": "reportTypeOne",
+            "preloadData": "",
+            "access": "multi"
+        },
+        {
+            "id": 3,
+            "name": "Time to Hire",
+            "filterToSelect": [
+                "timePeriodSelect",
+                "simulFilter1",
+                "simulFilterList",
+                "jobStatus",
+                "aggregateFilter"
+            ],
+            "htmlType": "reportTypeThree",
+            "preloadData": "",
+            "access": "single"
+        },
+        {
+            "id": 5,
+            "name": "Jobs and Positions",
+            "filterToSelect": [
+                "timePeriodSelect",
+                "simulFilter1",
+                "simulFilterList",
+                "jobStatus",
+                "aggregateFilter"
+            ],
+            "htmlType": "jobsAndPositions",
+            "preloadData": "",
+            "access": "single"
+        },
+        {
+            "id": 12,
+            "name": "Profile Source Mix",
+            "filterToSelect": [
+                "timePeriodSelect",
+                "simulFilter1",
+                "simulFilterList",
+                "jobStatus",
+                "aggregateFilter"
+            ],
+            "htmlType": "sourceMix-new",
+            "preloadData": "",
+            "access": "multi"
+        },
+        {
+            "id": 13,
+            "name": "Joiners Summary",
+            "filterToSelect": [
+                "timePeriodSelect",
+                "simulFilter1",
+                "simulFilterList",
+                "jobStatus",
+                "aggregateFilter"
+            ],
+            "htmlType": "joiners-summary",
+            "preloadData": "",
+            "access": "single"
+        },
+        {
+            "id": 14,
+            "name": "Recruitment Funnel",
+            "useGenericDefenition": true,
+            "filterToSelect": [
+                "timePeriodSelect",
+                "simulFilter1",
+                "simulFilterList",
+                "jobStatus",
+                "aggregateFilter"
+            ],
+            "htmlType": "recruitmentFunnel",
+            "preloadData": "",
+            "access": "single"
+        },
+        {
+            "id": 15,
+            "name": "Employee Referral",
+            "useGenericDefenition": true,
+            "filterToSelect": [
+                "timePeriodSelect",
+                "simulFilter1",
+                "simulFilterList",
+                "jobStatus",
+                "aggregateFilter"
+            ],
+            "preloadData": "",
+            "htmlType": "simpleGenericReport",
+            "access": "multi"
+        },
+        {
+            "id": 20,
+            "name": "Partner Efficiency",
+            "useGenericDefenition": true,
+            "filterToSelect": [
+                "timePeriodSelect",
+                "simulFilter1",
+                "simulFilterList",
+                "jobStatus",
+                "aggregateFilter"
+            ],
+            "htmlType": "simpleGenericReport",
+            "preloadData": "",
+            "access": "multi"
+        },
+        {
+            "id": 16,
+            "name": "Offer Activity",
+            "useGenericDefenition": true,
+            "filterToSelect": [
+                "timePeriodSelect",
+                "simulFilter1",
+                "simulFilterList",
+                "jobStatus",
+                "aggregateFilter"
+            ],
+            "htmlType": "simpleGenericReport",
+            "preloadData": "",
+            "access": "single"
+        },
+        {
+            "id": 17,
+            "name": "Dashboard Summary",
+            "useGenericDefenition": true,
+            "filterToSelect": [
+                "timePeriodSelect",
+                "simulFilter1",
+                "simulFilterList",
+                "jobStatus",
+                "aggregateFilter"
+            ],
+            "htmlType": "simpleGenericReport",
+            "preloadData": "",
+            "access": "single"
+        }
+    ],
+    "possibleFilters": {
+        "timePeriodSelect": [
+            "Yesterday",
+            "Past 1 weeks (7 days)",
+            "Past 2 weeks (14 days)",
+            "Last 30 days",
+            "Last 3 Months",
+            "Since start of the week",
+            "Since start of current month",
+            "Since start of the Quarter",
+            "Since start of Year (Calendar)",
+            "Since start of Year (Financial)",
+            "Custom"
+        ],
+        "simulFilter": [
+            "Departments",
+            "Recruiters",
+            "Location",
+            "Hiring Manager"
+        ],
+        "simulFilter1": [
+            "Departments",
+            "Recruiters",
+            "Location",
+            "Hiring Manager"
+        ],
+        "aggregateFilter": [
+            "Departments",
+            "Recruiters",
+            "Location",
+            "Hiring Manager"
+        ],
+        "jobStatus": [
+            "Open",
+            "Hidden",
+            "Closed",
+            "All"
+        ],
+        "department": []
+    },
+    "Screening": [
+        "Shortlisted",
+        "CV Screening Pending",
+        "HM Screening Pending",
+        "Phone Screening Pending",
+        "CV Shortlisted",
+        "HM Shortlisted",
+        "Phone Screening Selected",
+        "CV Rejected",
+        "HM Rejected",
+        "Phone Screening Rejected",
+        "On Hold"
+    ],
+    "Interviewing": [
+        "Round 1 - Interview Scheduled",
+        "Round 2 - Interview Scheduled",
+        "Round 3 - Interview Scheduled",
+        "Round 1 - Interview Selected",
+        "Round 2 - Interview Selected",
+        "Round 3 - Interview Selected",
+        "Round 1 - Interview Rejected",
+        "Round 2 - Interview Rejected",
+        "Round 3 - Interview Rejected",
+        "Selected",
+        "Not Selected"
+    ],
+    "reportTypeMapping": {
+        "doughnutMapping": [
+            "Pending",
+            "In Progress",
+            "Discontinued",
+            "Rejects",
+            "Selects"
+        ],
+        "horizontalBarGraphMapping": [
+            "Pending With Recruiter",
+            "Pending With Interviewer",
+            "Pending With Candidate",
+            "Discontinued"
+        ]
+    },
+    "StageInfo": {
+        "Pending Evaluation": [],
+        "Pending": [
+            "Pending"
+        ],
+        "In Progress": [
+            "Shortlisted",
+            "Interview Scheduled",
+            "Interview Selected",
+            "Interview Rejected",
+            "Interviewed",
+            "Documents Requested",
+            "Documents Submitted",
+            "Documents Accepted",
+            "Documents Rejected",
+            "Selected"
+        ],
+        "On Hold": [
+            "Selection On Hold",
+            "On Hold"
+        ],
+        "Screening Reject": [
+            "Rejected"
+        ],
+        "Not Selected": [
+            "Not Selected"
+        ],
+        "Offers": [
+            "Fitment Initiated",
+            "Fitment L2 Pending",
+            "Fitment L1 Pending",
+            "Fitment L2 Approved",
+            "Fitment L1 Approved",
+            "Fitment L2 Rejected",
+            "Fitment L1 Rejected",
+            "Offer Sent",
+            "Offer Accepted",
+            "Offer Rejected",
+            "Offer Revoked"
+        ],
+        "Joins": [
+            "Joined",
+            "Not Joined"
+        ]
+    },
+    "doughnutTwo": {
+        "Offer Generated": [
+            "Offer Initiated",
+            "Offer Sent",
+            "Offer Accepted",
+            "Offer Modified Minorly",
+            "Offer Documents Enabled",
+            "Offer Documents Verified",
+            "Post BGV Verified",
+            "Pre BGV Initiated",
+            "Post BGV Initiated"
+        ],
+        "Offer Accepted": [
+            "Offer Accepted"
+        ],
+        "Offer Declined": [
+            "Offer Rejected",
+            "Offer Declined"
+        ],
+        "Offer Revoked": [
+            "Offer Revoked"
+        ],
+        "Offers in Progress": [
+            "Fitment Initiated",
+            "Fitment L1 Approved",
+            "Fitment L2 Approved",
+            "Fitment L3 Approved",
+            "Fitment L1 Pending",
+            "Fitment L2 Pending",
+            "Fitment L3 Pending",
+            "Fitment L1 Rejected",
+            "Fitment L2 Rejected",
+            "Fitment L3 Rejected"
+        ]
+    },
+    "doughnut": {
+        "Shortlisted": [
+            "Shortlisted"
+        ],
+        "Rejected": [
+            "Rejected"
+        ],
+        "On Hold": [
+            "On Hold"
+        ],
+        "HM Screening": [
+            "HM Screening Pending",
+            "HM Shortlisted",
+            "HM Rejected"
+        ]
+    },
+    "horizontalBarGraph": {
+        "Pending With Recruiter": [
+            "Pending"
+        ],
+        "Pending With Interviewer": [
+            "Shortlisted",
+            "Tech Shortlisted",
+            "HR Shortlisted",
+            "Interview Scheduled",
+            "Interview Selected",
+            "Interview Rejected",
+            "Interviewed",
+            "Documents Requested",
+            "Documents Submitted",
+            "Documents Accepted",
+            "Documents Rejected",
+            "Selected",
+            "Not Selected",
+            "Selection On Hold"
+        ],
+        "Pending With Candidate": [
+            "Documents Requested",
+            "Offer Sent"
+        ],
+        "Discontinued": [
+            "Selection On Hold",
+            "On Hold",
+            "Rejected",
+            "Not Selected"
+        ]
+    },
+    "reportTypeTwo": {
+        "horizontalStackedBar": [
+            "Screening",
+            "Interviewing",
+            "Offer Joins"
+        ],
+        "discreteBar": [
+            "Pending With Recruiter",
+            "Pending With Interviewer",
+            "Pending With Candidate"
+        ]
+    },
+    "reportTypeThree": {
+        "horizontalStackedBar": [
+            "Screening",
+            "Selection",
+            "Offers",
+            "Hire"
+        ],
+        "Screening": [
+            "Shortlist"
+        ]
+    },
+    "searchRequestConfigs": {
+        "Hiring Progress": {
+            "types": [
+                "applicationRecord"
+            ],
+            "applyFilters": [
+                {
+                    "key": "jobApplication.jobTitle",
+                    "value": "Job Title"
+                },
+                {
+                    "key": "jobApplication.jobCode",
+                    "value": "Job Code"
+                },
+                {
+                    "key": "jobApplication.jobLocation",
+                    "value": "Location"
+                },
+                {
+                    "key": "jobApplication.deptFullCode",
+                    "value": "Department"
+                },
+                {
+                    "key": "jobApplication.currentStatus",
+                    "value": "Pending"
+                },
+                {
+                    "key": "jobApplication.currentStatus",
+                    "value": "Screening"
+                },
+                {
+                    "key": "jobApplication.currentStatus",
+                    "value": "Interviewing"
+                },
+                {
+                    "key": "jobApplication.currentStatus",
+                    "value": "Offers"
+                },
+                {
+                    "key": "jobApplication.currentStatus",
+                    "value": "Joins"
+                }
+            ],
+            "applyFiltersForRecruiter": [
+                {
+                    "key": "username",
+                    "value": "Recruiter"
+                }
+            ],
+            "applyFiltersForJobFields": [
+                {
+                    "key": "positionsRequired",
+                    "value": "Positions"
+                }
+            ],
+            "aggregationTerm": "jobApplication.jobId"
+        }
+    },
+    "genericReports": {
+        "Jobs Report": {
+            "query": "\"aggs\":{\"deptAgg\":{\"terms\":{\"field\":\"deptFullCode\",\"size\":\"10000\"}},\"locationAgg\":{\"terms\":{\"field\":\"location\",\"size\":\"10000\"}},\"range\":{\"date_range\":{\"field\":\"createdDate\",\"ranges\":[{\"key\":\"first\",\"from\":\"now-w\",\"to\":\"now\"},{\"key\":\"second\",\"from\":\"now-2w\",\"to\":\"now-w\"},{\"key\":\"third\",\"from\":\"now-3w\",\"to\":\"now-2w\"},{\"key\":\"fourth\",\"from\":\"now-4w\",\"to\":\"now-3w\"},{\"key\":\"fifth\",\"from\":\"now-5w\",\"to\":\"now-4w\"},{\"key\":\"sixth\",\"from\":\"now-6w\",\"to\":\"now-5w\"},{\"key\":\"seventh\",\"from\":\"now-7w\",\"to\":\"now-6w\"},{\"key\":\"eighth\",\"from\":\"now-8w\",\"to\":\"now-7w\"},{\"key\":\"ninth\",\"from\":\"now-9w\",\"to\":\"now-8w\"},{\"key\":\"tenth\",\"from\":\"now-10w\",\"to\":\"now-9w\"}]}},\"jobTitleAgg\":{\"terms\":{\"field\":\"jobTitle\",\"size\":\"10000\"}}},\"size\":\"0\"",
+            "types": []
+        },
+        "Recruitment Activities": {
+            "query": "\"aggs\":{\"statusAgg\":{\"terms\":{\"field\":\"actionCode\",\"size\":\"10000\"},\"aggs\":{\"range\":{\"date_range\":{\"field\":\"actedOn\",\"ranges\":[{\"key\":\"first\",\"from\":\"now-w\",\"to\":\"now\"},{\"key\":\"second\",\"from\":\"now-2w\",\"to\":\"now-w\"},{\"key\":\"third\",\"from\":\"now-3w\",\"to\":\"now-2w\"},{\"key\":\"fourth\",\"from\":\"now-4w\",\"to\":\"now-3w\"},{\"key\":\"fifth\",\"from\":\"now-5w\",\"to\":\"now-4w\"},{\"key\":\"sixth\",\"from\":\"now-6w\",\"to\":\"now-5w\"},{\"key\":\"seventh\",\"from\":\"now-7w\",\"to\":\"now-6w\"},{\"key\":\"eighth\",\"from\":\"now-8w\",\"to\":\"now-7w\"},{\"key\":\"ninth\",\"from\":\"now-9w\",\"to\":\"now-8w\"},{\"key\":\"tenth\",\"from\":\"now-10w\",\"to\":\"now-9w\"}]}}}}},\"size\":\"0\"",
+            "types": [
+                "applyAction"
+            ]
+        },
+        "Source Mix": {
+            "queryDepartment": "\"aggs\":{\"sourceMixAgg\":{\"terms\":{\"field\":\"deptFullCode\",\"size\":\"10000\"},\"aggs\":{\"sourcesAgg\":{\"children\":{\"type\":\"applicationRecord\"},\"aggs\":{\"topNames\":{\"terms\":{\"field\":\"jobApplication.source\",\"size\":10000}}}}}}},\"size\":\"0\"",
+            "queryLocation": "\"aggs\":{\"sourceMixAgg\":{\"terms\":{\"field\":\"location\",\"size\":\"10000\"},\"aggs\":{\"sourcesAgg\":{\"children\":{\"type\":\"applicationRecord\"},\"aggs\":{\"topNames\":{\"terms\":{\"field\":\"jobApplication.source\",\"size\":10000}}}}}}},\"size\":\"0\"",
+            "queryRecruiter": "\"aggs\":{\"sourceMixAgg\":{\"terms\":{\"field\":\"location\",\"size\":\"10000\"},\"aggs\":{\"sourcesAgg\":{\"children\":{\"type\":\"applicationRecord\"},\"aggs\":{\"topNames\":{\"terms\":{\"field\":\"jobApplication.source\",\"size\":10000}}}}}}},\"size\":\"0\"",
+            "types": []
+        },
+        "Source Mix Analysis": {
+            "query": "\"aggs\":{\"sourceAgg\":{\"terms\":{\"field\":\"jobApplication.source\",\"size\":\"10000\"},\"aggs\":{\"goodProfiles\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"bool\":{\"must\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.finalRecommendation\":{\"query\":\"Shortlist\",\"slop\":0,\"boost\":1}}}]}},{\"bool\":{\"must_not\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"HR Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Tech Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Not Aligned\",\"slop\":0,\"boost\":1}}}]}}]}}]}}]}},\"Sourcing\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Pending\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"Screening\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Selection On Hold\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"On Hold\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Rejected\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"Selection\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Shortlisted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interview Scheduled\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interview Selected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interview Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interviewed\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Documents Requested\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Documents Submitted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Documents Accepted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Documents Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Selected\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"Offer\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Made\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Generated\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Sent\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Accepted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Declined\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Dropped\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Revoked\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment Initiated\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L1 Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L1 Approved\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L1 Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L2 Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L2 Approved\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L2 Rejected\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"Joins\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Joined\",\"slop\":0,\"boost\":1}}}]}}]}}]}}}}}},\"size\":\"0\"",
+            "types": [
+                "applicationRecord"
+            ]
+        },
+        "Partner Source Mix Analysis": {
+            "query": "\"aggs\":{\"vendorAgg\":{\"terms\":{\"field\":\"jobApplication.vendorName\",\"size\":\"10000\"},\"aggs\":{\"goodProfiles\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"bool\":{\"must\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.finalRecommendation\":{\"query\":\"Shortlist\",\"slop\":0,\"boost\":1}}}]}},{\"bool\":{\"must_not\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"HR Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Tech Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Not Aligned\",\"slop\":0,\"boost\":1}}}]}}]}}]}}]}},\"Sourcing\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Pending\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"Screening\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"HR Shortlisted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"HR Screened\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"HR Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Tech Screened\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Tech Shortlisted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Moved to another Job\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"On Hold\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Tech Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Assessment Initiated\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interview Scheduled\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interviewed\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interview Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interview Selected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Documents Requested\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Documents Submitted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Documents Accepted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Documents Rejected\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"Selection\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Selected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Not Selected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Selection on Hold\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"Offer\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment Initiated\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L1 Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L1 Approved\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L1 Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L1 Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L2 Approved\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L2 Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Sent\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Accepted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Revoked\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"Joins\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Joined\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"offerAccepted\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"bool\":{\"must\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Accepted\",\"slop\":0,\"boost\":1}}}]}}]}}]}}]}},\"offerRevoked\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"bool\":{\"must\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Revoked\",\"slop\":0,\"boost\":1}}}]}}]}}]}}]}},\"offerRejected\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"bool\":{\"must\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Rejected\",\"slop\":0,\"boost\":1}}}]}}]}}]}}]}}}}},\"size\":\"0\"",
+            "types": [
+                "applicationRecord"
+            ]
+        },
+        "Requisition Tat": {
+            "queryDepartment": "\"aggregations\":{\"tatDetails\":{\"terms\":{\"field\":\"deptFullCode\",\"size\":10000,\"min_doc_count\":1,\"shard_min_doc_count\":0,\"show_term_doc_count_error\":false,\"order\":[{\"_count\":\"desc\"},{\"_term\":\"asc\"}]},\"aggregations\":{\"reqNotesAgg\":{\"children\":{\"type\":\"reqNotes\"},\"aggregations\":{\"reqId\":{\"terms\":{\"field\":\"requisitionId\",\"size\":10000,\"min_doc_count\":1,\"shard_min_doc_count\":0,\"show_term_doc_count_error\":false,\"order\":[{\"_count\":\"desc\"},{\"_term\":\"asc\"}]},\"aggregations\":{\"level0\":{\"filter\":{\"term\":{\"level\":{\"value\":\"0\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level1\":{\"filter\":{\"term\":{\"level\":{\"value\":\"1\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level2\":{\"filter\":{\"term\":{\"level\":{\"value\":\"2\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level3\":{\"filter\":{\"term\":{\"level\":{\"value\":\"3\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level4\":{\"filter\":{\"term\":{\"level\":{\"value\":\"4\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level_1\":{\"bucket_script\":{\"buckets_path\":{\"start\":\"level0>avgAgg\",\"end\":\"level1>avgAgg\"},\"script\":{\"source\":\"(params.end - params.start)/(60*60*1000*24)\",\"lang\":\"painless\"},\"gap_policy\":\"skip\"}},\"level_2\":{\"bucket_script\":{\"buckets_path\":{\"start\":\"level1>avgAgg\",\"end\":\"level2>avgAgg\"},\"script\":{\"source\":\"(params.end - params.start)/(60*60*1000*24)\",\"lang\":\"painless\"},\"gap_policy\":\"skip\"}},\"level_3\":{\"bucket_script\":{\"buckets_path\":{\"start\":\"level2>avgAgg\",\"end\":\"level3>avgAgg\"},\"script\":{\"source\":\"(params.end - params.start)/(60*60*1000*24)\",\"lang\":\"painless\"},\"gap_policy\":\"skip\"}},\"level_4\":{\"bucket_script\":{\"buckets_path\":{\"start\":\"level3>avgAgg\",\"end\":\"level4>avgAgg\"},\"script\":{\"source\":\"(params.end - params.start)/(60*60*1000*24)\",\"lang\":\"painless\"},\"gap_policy\":\"skip\"}}}},\"avglevel1\":{\"avg_bucket\":{\"buckets_path\":[\"reqId>level_1\"],\"gap_policy\":\"skip\"}},\"avglevel2\":{\"avg_bucket\":{\"buckets_path\":[\"reqId>level_2\"],\"gap_policy\":\"skip\"}},\"avglevel3\":{\"avg_bucket\":{\"buckets_path\":[\"reqId>level_3\"],\"gap_policy\":\"skip\"}},\"avglevel4\":{\"avg_bucket\":{\"buckets_path\":[\"reqId>level_4\"],\"gap_policy\":\"skip\"}}}}}}},\"size\":\"0\"",
+            "queryLocation": "\"aggregations\":{\"tatDetails\":{\"terms\":{\"field\":\"location\",\"size\":10000,\"min_doc_count\":1,\"shard_min_doc_count\":0,\"show_term_doc_count_error\":false,\"order\":[{\"_count\":\"desc\"},{\"_term\":\"asc\"}]},\"aggregations\":{\"reqNotesAgg\":{\"children\":{\"type\":\"reqNotes\"},\"aggregations\":{\"reqId\":{\"terms\":{\"field\":\"requisitionId\",\"size\":10000,\"min_doc_count\":1,\"shard_min_doc_count\":0,\"show_term_doc_count_error\":false,\"order\":[{\"_count\":\"desc\"},{\"_term\":\"asc\"}]},\"aggregations\":{\"level0\":{\"filter\":{\"term\":{\"level\":{\"value\":\"0\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level1\":{\"filter\":{\"term\":{\"level\":{\"value\":\"1\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level2\":{\"filter\":{\"term\":{\"level\":{\"value\":\"2\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level3\":{\"filter\":{\"term\":{\"level\":{\"value\":\"3\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level4\":{\"filter\":{\"term\":{\"level\":{\"value\":\"4\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level_1\":{\"bucket_script\":{\"buckets_path\":{\"start\":\"level0>avgAgg\",\"end\":\"level1>avgAgg\"},\"script\":{\"source\":\"(params.end - params.start)/(60*60*1000*24)\",\"lang\":\"painless\"},\"gap_policy\":\"skip\"}},\"level_2\":{\"bucket_script\":{\"buckets_path\":{\"start\":\"level1>avgAgg\",\"end\":\"level2>avgAgg\"},\"script\":{\"source\":\"(params.end - params.start)/(60*60*1000*24)\",\"lang\":\"painless\"},\"gap_policy\":\"skip\"}},\"level_3\":{\"bucket_script\":{\"buckets_path\":{\"start\":\"level2>avgAgg\",\"end\":\"level3>avgAgg\"},\"script\":{\"source\":\"(params.end - params.start)/(60*60*1000*24)\",\"lang\":\"painless\"},\"gap_policy\":\"skip\"}},\"level_4\":{\"bucket_script\":{\"buckets_path\":{\"start\":\"level3>avgAgg\",\"end\":\"level4>avgAgg\"},\"script\":{\"source\":\"(params.end - params.start)/(60*60*1000*24)\",\"lang\":\"painless\"},\"gap_policy\":\"skip\"}}}},\"avglevel1\":{\"avg_bucket\":{\"buckets_path\":[\"reqId>level_1\"],\"gap_policy\":\"skip\"}},\"avglevel2\":{\"avg_bucket\":{\"buckets_path\":[\"reqId>level_2\"],\"gap_policy\":\"skip\"}},\"avglevel3\":{\"avg_bucket\":{\"buckets_path\":[\"reqId>level_3\"],\"gap_policy\":\"skip\"}},\"avglevel4\":{\"avg_bucket\":{\"buckets_path\":[\"reqId>level_4\"],\"gap_policy\":\"skip\"}}}}}}},\"size\":\"0\"",
+            "queryRecruiter": "\"aggregations\":{\"tatDetails\":{\"terms\":{\"field\":\"jobCollaborationRecord.username\",\"size\":10000,\"min_doc_count\":1,\"shard_min_doc_count\":0,\"show_term_doc_count_error\":false,\"order\":[{\"_count\":\"desc\"},{\"_term\":\"asc\"}]},\"aggregations\":{\"reqNotesAgg\":{\"children\":{\"type\":\"reqNotes\"},\"aggregations\":{\"reqId\":{\"terms\":{\"field\":\"requisitionId\",\"size\":10000,\"min_doc_count\":1,\"shard_min_doc_count\":0,\"show_term_doc_count_error\":false,\"order\":[{\"_count\":\"desc\"},{\"_term\":\"asc\"}]},\"aggregations\":{\"level0\":{\"filter\":{\"term\":{\"level\":{\"value\":\"0\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level1\":{\"filter\":{\"term\":{\"level\":{\"value\":\"1\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level2\":{\"filter\":{\"term\":{\"level\":{\"value\":\"2\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level3\":{\"filter\":{\"term\":{\"level\":{\"value\":\"3\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level4\":{\"filter\":{\"term\":{\"level\":{\"value\":\"4\",\"boost\":1}}},\"aggregations\":{\"avgAgg\":{\"avg\":{\"field\":\"addedOn\"}}}},\"level_1\":{\"bucket_script\":{\"buckets_path\":{\"start\":\"level0>avgAgg\",\"end\":\"level1>avgAgg\"},\"script\":{\"source\":\"(params.end - params.start)/(60*60*1000*24)\",\"lang\":\"painless\"},\"gap_policy\":\"skip\"}},\"level_2\":{\"bucket_script\":{\"buckets_path\":{\"start\":\"level1>avgAgg\",\"end\":\"level2>avgAgg\"},\"script\":{\"source\":\"(params.end - params.start)/(60*60*1000*24)\",\"lang\":\"painless\"},\"gap_policy\":\"skip\"}},\"level_3\":{\"bucket_script\":{\"buckets_path\":{\"start\":\"level2>avgAgg\",\"end\":\"level3>avgAgg\"},\"script\":{\"source\":\"(params.end - params.start)/(60*60*1000*24)\",\"lang\":\"painless\"},\"gap_policy\":\"skip\"}},\"level_4\":{\"bucket_script\":{\"buckets_path\":{\"start\":\"level3>avgAgg\",\"end\":\"level4>avgAgg\"},\"script\":{\"source\":\"(params.end - params.start)/(60*60*1000*24)\",\"lang\":\"painless\"},\"gap_policy\":\"skip\"}}}},\"avglevel1\":{\"avg_bucket\":{\"buckets_path\":[\"reqId>level_1\"],\"gap_policy\":\"skip\"}},\"avglevel2\":{\"avg_bucket\":{\"buckets_path\":[\"reqId>level_2\"],\"gap_policy\":\"skip\"}},\"avglevel3\":{\"avg_bucket\":{\"buckets_path\":[\"reqId>level_3\"],\"gap_policy\":\"skip\"}},\"avglevel4\":{\"avg_bucket\":{\"buckets_path\":[\"reqId>level_4\"],\"gap_policy\":\"skip\"}}}}}}},\"size\":\"0\"",
+            "types": []
+        },
+        "Recruiter Workload": {
+            "query": "\"aggregations\":{\"userNameAgg\":{\"terms\":{\"field\":\"jobCollaborationRecord.username\"},\"aggs\":{\"jobsNoAgg\":{\"cardinality\":{\"field\":\"id\"}},\"currentStatusAgg\":{\"children\":{\"type\":\"applicationRecord\"},\"aggs\":{\"ScreeningAgg\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"term\":{\"jobApplication.currentStatus\":\"Pending\"}},{\"term\":{\"jobApplication.currentStatus\":\"Selection on Hold\"}},{\"term\":{\"jobApplication.currentStatus\":\"On Hold\"}},{\"term\":{\"jobApplication.currentStatus\":\"Rejected\"}}]}}]}}]}},\"InterviewAgg\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"term\":{\"jobApplication.currentStatus\":\"Shortlisted\"}},{\"term\":{\"jobApplication.currentStatus\":\"Tech Shortlisted\"}},{\"term\":{\"jobApplication.currentStatus\":\"HR Shortlisted\"}},{\"term\":{\"jobApplication.currentStatus\":\"Interview Scheduled\"}},{\"term\":{\"jobApplication.currentStatus\":\"Interview Rejected\"}},{\"term\":{\"jobApplication.currentStatus\":\"Interviewed\"}},{\"term\":{\"jobApplication.currentStatus\":\"Documents Requested\"}},{\"term\":{\"jobApplication.currentStatus\":\"Documents Submitted\"}},{\"term\":{\"jobApplication.currentStatus\":\"Documents Accepted\"}},{\"term\":{\"jobApplication.currentStatus\":\"Documents Rejected\"}},{\"term\":{\"jobApplication.currentStatus\":\"Selected\"}},{\"term\":{\"jobApplication.currentStatus\":\"Not Selected\"}}]}}]}}]}},\"OfferAgg\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"term\":{\"jobApplication.currentStatus\":\"Offer Made\"}},{\"term\":{\"jobApplication.currentStatus\":\"Offer Sent\"}},{\"term\":{\"jobApplication.currentStatus\":\"Offer Rejected\"}},{\"term\":{\"jobApplication.currentStatus\":\"Offer Accepted\"}},{\"term\":{\"jobApplication.currentStatus\":\"Offer Dropped\"}},{\"term\":{\"jobApplication.currentStatus\":\"Fitment Initiated\"}},{\"term\":{\"jobApplication.currentStatus\":\"Fitment L1 Pending\"}},{\"term\":{\"jobApplication.currentStatus\":\"Fitment L1 Approved\"}},{\"term\":{\"jobApplication.currentStatus\":\"Fitment L1 Rejected\"}},{\"term\":{\"jobApplication.currentStatus\":\"Fitment L2 Pending\"}},{\"term\":{\"jobApplication.currentStatus\":\"Fitment L2 Approved\"}},{\"term\":{\"jobApplication.currentStatus\":\"Fitment L2 Rejected\"}}]}}]}}]}},\"JoinAgg\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"term\":{\"jobApplication.currentStatus\":\"Joined\"}}]}}]}}]}},\"sourceAgg\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"term\":{\"jobApplication.source\":\"Recruiter Upload\"}}]}}]}}]}}}}}}},\"size\":\"0\"",
+            "types": []
+        },
+        "Jobs and Positions": {
+            "queryDepartment": "\"aggs\":{\"deptAgg\":{\"terms\":{\"field\":\"deptFullCode\",\"size\":\"10000\"},\"aggs\":{\"positionAgg\":{\"sum\":{\"field\":\"positionsRequired\"}}}}},\"size\":0",
+            "queryLocation": "\"aggs\":{\"deptAgg\":{\"terms\":{\"field\":\"location\",\"size\":\"10000\"},\"aggs\":{\"positionAgg\":{\"sum\":{\"field\":\"positionsRequired\"}}}}},\"size\":0",
+            "types": []
+        },
+        "Profile Source Mix": {
+            "query": "\"aggs\":{\"jobBoardsAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"must_not\":[{\"match_phrase\":{\"jobApplication.source\":{\"query\":\"CareerSite\"}}},{\"match_phrase\":{\"jobApplication.source\":{\"query\":\"RecruiterUpload\"}}},{\"match_phrase\":{\"jobApplication.source\":{\"query\":\"EmployeeReferral\"}}}]}}]}},\"careerSiteAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"match_phrase\":{\"jobApplication.source\":{\"query\":\"CareerSite\"}}}]}}]}},\"RecruiterUploadAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"match_phrase\":{\"jobApplication.source\":{\"query\":\"RecruiterUpload\"}}}]}}]}},\"ReferralAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"match_phrase\":{\"jobApplication.source\":{\"query\":\"EmployeeReferral\"}}}]}}]}},\"JoinerAggs\":{\"terms\":{\"field\":\"jobApplication.source\",\"size\":\"10000\"},\"aggs\":{\"Joins\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Joined\"}}}]}}]}}}},\"sourceAggs\":{\"terms\":{\"field\":\"jobApplication.source\",\"size\":\"120\"},\"aggs\":{\"goodProfiles\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"bool\":{\"must\":[{\"match_phrase\":{\"jobApplication.finalRecommendation\":{\"query\":\"Reco Shortlist\",\"slop\":0,\"boost\":1}}}]}},{\"bool\":{\"must_not\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"HR Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Tech Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Not Aligned\",\"slop\":0,\"boost\":1}}}]}}]}}]}}]}},\"Sourcing\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Reco Shortlist\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Reco Reject\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"Screening\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"On Hold\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"CV Screening Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Shortlisted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Phone Screening Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"HM Screening Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"HM Shortlisted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"CV Shortlisted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Phone Screening Selected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"CV Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Phone Screening Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"HM Rejected\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"Selection\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Documents Requested\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interview Scheduled\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interviewed\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interview Canceled\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interview Selected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interview Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Selected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Not Selected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Telephonic-Interview Scheduled\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"HR Negotiation-Interviewed\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Final Level-Interview Scheduled\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Final Level-Interview Selected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Final Level-Interview Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Final Level-Interviewed\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Technical 1-Interviewed\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Technical 1-Interview Selected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Technical 1-Interview Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Technical 1-Interview Scheduled\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Technical 2-Interviewed\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Technical 2-Interview Selected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Technical 2-Interview Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Technical 2-Interview Scheduled\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Interviewed\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Cultural-Interview Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Cultural-Interview Selected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Cultural-Interviewed\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Cultural-Interview Scheduled\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"Offer\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Sent\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Initiated\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment Initiated\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L1 Approved\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L2 Approved\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L3 Approved\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L1 Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L2 Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L3 Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L1 Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L2 Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Fitment L3 Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Accepted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Documents Enabled\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Modified Minorly\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Documents Verified\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Post BGV Verified\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Pre BGV Initiated\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Post BGV Initiated\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Hiredown Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Modified\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Revoked\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"On-Boarding Initiated\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Not Initiated\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Released\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"BGV Required\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"BGV Not Required\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"L4 Rejected\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"L4 Approved\",\"slop\":0,\"boost\":1}}}]}}]}}]}},\"Joins\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Joined\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Onboarding Documents Enabled\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Onboarding Docs Pending\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Onboarding Assigned\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Onboarding Documents Verified\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Onboarding Docs Submitted\",\"slop\":0,\"boost\":1}}},{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Not Joined\",\"slop\":0,\"boost\":1}}}]}}]}}]}}}}},\"size\": 0",
+            "types": [
+                "applicationRecord"
+            ]
+        },
+        "Joiners Report": {
+            "queryDepartment": "\"aggs\":{\"deptAggs\":{\"terms\":{\"field\":\"deptFullCode\",\"size\":\"10000\"},\"aggs\":{\"firstAggs\":{\"children\":{\"type\":\"applicationRecord\"},\"aggs\":{\"joinersAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Joined\"}}}]}}]}}]}},\"yetToJoinAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Accepted\"}}}]}}]}},\"backoutAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Not Joined\"}}}]}}]}}}}}}},\"size\":0",
+            "queryLocation": "\"aggs\":{\"deptAggs\":{\"terms\":{\"field\":\"deptFullCode\",\"size\":\"10000\"},\"aggs\":{\"firstAggs\":{\"children\":{\"type\":\"applicationRecord\"},\"aggs\":{\"joinersAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Joined\"}}}]}}]}}]}},\"yetToJoinAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Accepted\"}}}]}}]}},\"backoutAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Not Joined\"}}}]}}]}}}}}}},\"size\":0",
+            "types": []
+        },
+        "Joiners Summary": {
+            "queryDepartment": "\"aggs\":{\"deptAggs\":{\"terms\":{\"field\":\"deptFullCode\",\"size\":\"10000\"},\"aggs\":{\"firstAggs\":{\"children\":{\"type\":\"applicationRecord\"},\"aggs\":{\"joinersAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Joined\"}}}]}}]}}]}},\"yetToJoinAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Accepted\"}}}]}}]}},\"backoutAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Not Joined\"}}}]}}]}}}},\"positionAggs\":{\"sum\":{\"field\":\"positionsRequired\"}}}}},\"size\":0",
+            "queryLocation": "\"aggs\":{\"deptAggs\":{\"terms\":{\"field\":\"location\",\"size\":\"10000\"},\"aggs\":{\"firstAggs\":{\"children\":{\"type\":\"applicationRecord\"},\"aggs\":{\"joinersAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"must\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Joined\"}}}]}}]}}]}},\"yetToJoinAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Offer Accepted\"}}}]}}]}},\"backoutAggs\":{\"filters\":{\"filters\":[{\"bool\":{\"should\":[{\"match_phrase\":{\"jobApplication.currentStatus\":{\"query\":\"Not Joined\"}}}]}}]}}}},\"positionAggs\":{\"sum\":{\"field\":\"positionsRequired\"}}}}},\"size\":0",
+            "types": []
+        }
+    },
+    "tatInfo": {
+        "Selection": {
+            "start": "Shortlist",
+            "end": "Select"
+        },
+        "Offers": {
+            "start": "Select",
+            "end": "Accept Offer"
+        },
+        "Hire": {
+            "start": "Accept Offer",
+            "end": "Mark As Joined"
+        }
+    },
+    "horizontalStackedBarGraph": {
+        "Screening": [
+            "On Hold",
+            "Screening Reject"
+        ],
+        "Interviewing": [
+            "In Progress",
+            "Not Selected"
+        ],
+        "Offer Joins": [
+            "Offers",
+            "Joins"
+        ]
+    },
+    "discreteBarGraph": {
+        "Pending With Recruiter": [
+            "Pending"
+        ],
+        "Pending With Interviewer": [
+            "Shortlisted",
+            "Tech Shortlisted",
+            "HR Shortlisted",
+            "Interview Scheduled",
+            "Interview Selected",
+            "Interview Rejected",
+            "Interviewed",
+            "Documents Requested",
+            "Documents Submitted",
+            "Documents Accepted",
+            "Documents Rejected",
+            "Selected",
+            "Not Selected",
+            "Selection On Hold"
+        ],
+        "Pending With Candidate": [
+            "Documents Requested"
+        ]
+    },
+    "reportsCollection": {
+        "Screening": {
+            "actionCode": [
+                "Shortlist"
+            ],
+            "subflowType": [
+                "ScreeningFlow"
+            ]
+        },
+        "Selection": {
+            "actionCode": [
+                "Select"
+            ],
+            "subflowType": [
+                "SelectionSubFlow"
+            ]
+        },
+        "Offers": {
+            "actionCode": [
+                "Accept Offer"
+            ],
+            "subflowType": [
+                "OfferWorkflow"
+            ]
+        },
+        "Hire": {
+            "actionCode": [
+                "Mark As Joined"
+            ],
+            "subflowType": [
+                "OfferWorkflow"
+            ]
+        }
+    },
+    "reportUiConfigs": {
+        "Recruitment Funnel": {
+            "reportSections": [
+                {
+                    "sectionHeading": "Recruitment Funnel Pies",
+                    "charts": [
+                        {
+                            "name": "Shortlist",
+                            "visualType": "",
+                            "valueNames": [
+                                "Shortlist",
+                                "Total"
+                            ]
+                        },
+                        {
+                            "name": "Interview Scheduled",
+                            "visualType": "",
+                            "valueNames": [
+                                "Interview Scheduled",
+                                "Shortlist"
+                            ]
+                        },
+                        {
+                            "name": "Interview Selected",
+                            "visualType": "",
+                            "valueNames": [
+                                "Interview Selected",
+                                "Interview Scheduled"
+                            ]
+                        },
+                        {
+                            "name": "Final Selects",
+                            "visualType": "",
+                            "valueNames": [
+                                "Final Selects",
+                                "Interview Selected"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "sectionHeading": "Recruitment Funnel Table",
+                    "charts": [
+                        {
+                            "name": "tabular",
+                            "visualType": "table",
+                            "includeTotal": true,
+                            "valueNames": [
+                                "Shortlist",
+                                "Interview Scheduled",
+                                "Interview Selected",
+                                "Final Selects"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "Hiring Progress": {
+            "reportSections": [
+                {
+                    "sectionHeading": "Graph",
+                    "isVisible": false,
+                    "charts": [
+                        {}
+                    ]
+                },
+                {
+                    "sectionHeading": "Table",
+                    "charts": [
+                        {
+                            "name": "Hiring",
+                            "includeTotal": false,
+                            "valueNames": [
+                                "Job Title",
+                                "Job Code",
+                                "Project",
+                                "BU/Region",
+                                "LOB",
+                                "Function",
+                                "Department",
+                                "Location",
+                                "Recruiter",
+                                "Positions",
+                                "Sourcing",
+                                "Screening",
+                                "Interviewing",
+                                "Offers",
+                                "Joins"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "Time to Hire": {
+            "reportSections": [
+                {
+                    "sectionHeading": "Graph",
+                    "isVisible": false,
+                    "charts": [
+                        {}
+                    ]
+                },
+                {
+                    "sectionHeading": "Table",
+                    "charts": [
+                        {
+                            "name": "TimeToHire",
+                            "includeTotal": false,
+                            "valueNames": [
+                                "Total",
+                                "Jobs",
+                                "Sourcing",
+                                "Screening",
+                                "Selection",
+                                "Offers",
+                                "Hire"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "Recruiter Activity": {
+            "reportSections": [
+                {
+                    "sectionHeading": "Graph",
+                    "isVisible": true,
+                    "charts": [
+                        {}
+                    ]
+                },
+                {
+                    "sectionHeading": "Table",
+                    "charts": [
+                        {
+                            "name": "Recruiter",
+                            "visualType": "table",
+                            "includeTotal": false,
+                            "valueNames": [
+                                "Sourced",
+                                "Self Sourced",
+                                "HM Screened",
+                                "Shortlisted",
+                                "Interview Scheduled",
+                                "Interview Feedback",
+                                "Selected",
+                                "Fitment Initiated",
+                                "Joined"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "Employee Referral": {
+            "reportSections": [
+                {
+                    "sectionHeading": "Employee Referral Graph",
+                    "charts": [
+                        {}
+                    ]
+                },
+                {
+                    "sectionHeading": "Employee Referral Table",
+                    "charts": [
+                        {
+                            "name": "Employees",
+                            "visualType": "table",
+                            "includeTotal": true,
+                            "valueNames": [
+                                "Good Profile",
+                                "Sourcing",
+                                "Screening",
+                                "Selection",
+                                "Offers",
+                                "Joined"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "Partner Efficiency": {
+            "reportSections": [
+                {
+                    "sectionHeading": "Graph",
+                    "charts": [
+                        {}
+                    ]
+                },
+                {
+                    "sectionHeading": "Table",
+                    "charts": [
+                        {
+                            "name": "Partners",
+                            "visualType": "table",
+                            "includeTotal": true,
+                            "valueNames": [
+                                "Good Profile",
+                                "Sourcing",
+                                "Screening",
+                                "Selection",
+                                "Offer",
+                                "Joins"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "Offer Activity": {
+            "reportSections": [
+                {
+                    "sectionHeading": "Graph",
+                    "charts": [
+                        {}
+                    ]
+                },
+                {
+                    "sectionHeading": "Table",
+                    "charts": [
+                        {
+                            "name": "Offers",
+                            "visualType": "table",
+                            "includeTotal": false,
+                            "valueNames": [
+                                "Offers Initiated",
+                                "Offers Accepted",
+                                "Offers Rejected"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "Dashboard Summary": {
+            "reportSections": [
+                {
+                    "sectionHeading": "Graph",
+                    "charts": [
+                        {}
+                    ]
+                },
+                {
+                    "sectionHeading": "Table",
+                    "charts": [
+                        {
+                            "name": "Columns",
+                            "visualType": "table",
+                            "includeTotal": false,
+                            "valueNames": [
+                                "Applies",
+                                "Shortlists",
+                                "Interviews",
+                                "Offers",
+                                "Joins"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "mappingConfig": {
+        "Dashboard Summary": {
+            "applyStatus": {
+                "Applies": [
+                    "Pending",
+                    "Reco Shorlist",
+                    "Reco Reject",
+                    "Shortlisted",
+                    "Rejected",
+                    "CV Screening Pending",
+                    "HM Screening Pending",
+                    "Phone Screening Pending",
+                    "CV Shortlisted",
+                    "HM Shortlisted",
+                    "Phone Screening Selected",
+                    "CV Rejected",
+                    "HM Rejected",
+                    "Phone Screening Rejected",
+                    "On Hold",
+                    "Round 1 - Interview Scheduled",
+                    "Round 2 - Interview Scheduled",
+                    "Round 3 - Interview Scheduled",
+                    "Round 1 - Interview Selected",
+                    "Round 2 - Interview Selected",
+                    "Round 3 - Interview Selected",
+                    "Round 1 - Interview Rejected",
+                    "Round 2 - Interview Rejected",
+                    "Round 3 - Interview Rejected",
+                    "Selected",
+                    "Not Selected",
+                    "Fitment Initiated",
+                    "Fitment L2 Pending",
+                    "Fitment L1 Pending",
+                    "Fitment L2 Approved",
+                    "Fitment L1 Approved",
+                    "Fitment L2 Rejected",
+                    "Fitment L1 Rejected",
+                    "Offer Sent",
+                    "Offer Accepted",
+                    "Offer Rejected",
+                    "Offer Revoked",
+                    "Joined",
+                    "Not Joined"
+                ],
+                "Shortlists": [
+                    "Shortlisted",
+                    "CV Screening Pending",
+                    "HM Screening Pending",
+                    "Phone Screening Pending",
+                    "CV Shortlisted",
+                    "HM Shortlisted",
+                    "Phone Screening Selected",
+                    "CV Rejected",
+                    "HM Rejected",
+                    "Phone Screening Rejected",
+                    "On Hold"
+                ],
+                "Interviews": [
+                    "Round 1 - Interview Scheduled",
+                    "Round 2 - Interview Scheduled",
+                    "Round 3 - Interview Scheduled",
+                    "Round 1 - Interview Selected",
+                    "Round 2 - Interview Selected",
+                    "Round 3 - Interview Selected",
+                    "Round 1 - Interview Rejected",
+                    "Round 2 - Interview Rejected",
+                    "Round 3 - Interview Rejected",
+                    "Selected",
+                    "Not Selected"
+                ],
+                "Offers": [
+                    "Fitment Initiated",
+                    "Fitment L2 Pending",
+                    "Fitment L1 Pending",
+                    "Fitment L2 Approved",
+                    "Fitment L1 Approved",
+                    "Fitment L2 Rejected",
+                    "Fitment L1 Rejected",
+                    "Offer Sent",
+                    "Offer Accepted",
+                    "Offer Rejected",
+                    "Offer Revoked"
+                ],
+                "Joins": [
+                    "Joined",
+                    "Not Joined"
+                ]
+            }
+        },
+        "Recruiter Activity": {
+            "applyStatus": {
+                "Sourced": [],
+                "Shortlisted": [
+                    "Shortlist"
+                ],
+                "HM Screened": [
+                    "HM Screening"
+                ],
+                "Interview Scheduled": [
+                    "Schedule Interview",
+                    "Schedule Multipart Interview"
+                ],
+                "Interview Feedback": [
+                    "Interview Select",
+                    "Interview Reject"
+                ],
+                "Selected": [
+                    "Select"
+                ],
+                "Fitment Initiated": [
+                    "Create Fitment",
+                    "Req Fitment Approval L1",
+                    "Req Fitment Approval L2",
+                    "Request Documents",
+                    "Modify Fitment",
+                    "Revoke Offer",
+                    "Send Offer",
+                    "Verify PI",
+                    "Accept Documents",
+                    "Submit Documents"
+                ],
+                "Joined": [
+                    "Mark As Joined",
+                    "Mark As Not Joined"
+                ]
+            }
+        },
+        "Offer Activity": {
+            "applyStatus": {
+                "Offers Initiated": [
+                    "Fitment Initiated",
+                    "Fitment L2 Pending",
+                    "Fitment L1 Pending",
+                    "Fitment L2 Approved",
+                    "Fitment L1 Approved",
+                    "Fitment L2 Rejected",
+                    "Fitment L1 Rejected",
+                    "Offer Sent",
+                    "Offer Accepted",
+                    "Offer Rejected",
+                    "Offer Revoked"
+                ],
+                "Offers Accepted": [
+                    "Offer Accepted"
+                ],
+                "Offers Rejected": [
+                    "Offer Rejected",
+                    "Offer Revoked"
+                ]
+            }
+        },
+        "Employee Referral": {
+            "applyStatus": {
+                "Good Profile": [
+                    "Reco Shortlist"
+                ],
+                "Sourcing": [
+                    "Pending",
+                    "Reco Shortlist",
+                    "Reco Reject"
+                ],
+                "Screening": [
+                    "Shortlisted",
+                    "CV Screening Pending",
+                    "HM Screening Pending",
+                    "Phone Screening Pending",
+                    "CV Shortlisted",
+                    "HM Shortlisted",
+                    "Phone Screening Selected",
+                    "CV Rejected",
+                    "HM Rejected",
+                    "Phone Screening Rejected",
+                    "On Hold"
+                ],
+                "Selection": [
+                    "Round 1 - Interview Scheduled",
+                    "Round 2 - Interview Scheduled",
+                    "Round 3 - Interview Scheduled",
+                    "Round 1 - Interview Selected",
+                    "Round 2 - Interview Selected",
+                    "Round 3 - Interview Selected",
+                    "Round 1 - Interview Rejected",
+                    "Round 2 - Interview Rejected",
+                    "Round 3 - Interview Rejected",
+                    "Selected",
+                    "Not Selected"
+                ],
+                "Offers": [
+                    "Fitment Initiated",
+                    "Fitment L2 Pending",
+                    "Fitment L1 Pending",
+                    "Fitment L2 Approved",
+                    "Fitment L1 Approved",
+                    "Fitment L2 Rejected",
+                    "Fitment L1 Rejected",
+                    "Offer Sent",
+                    "Offer Accepted",
+                    "Offer Rejected",
+                    "Offer Revoked"
+                ],
+                "Joins": [
+                    "Joined",
+                    "Not Joined"
+                ]
+            }
+        },
+        "Partner Efficiency": {
+            "applyStatus": {
+                "Good Profile": [
+                    "Reco Shortlist"
+                ],
+                "Sourcing": [
+                    "Pending",
+                    "Reco Shortlist",
+                    "Reco Reject"
+                ],
+                "Screening": [
+                    "Shortlisted",
+                    "CV Screening Pending",
+                    "HM Screening Pending",
+                    "Phone Screening Pending",
+                    "CV Shortlisted",
+                    "HM Shortlisted",
+                    "Phone Screening Selected",
+                    "CV Rejected",
+                    "HM Rejected",
+                    "Phone Screening Rejected",
+                    "On Hold"
+                ],
+                "Selection": [
+                    "Round 1 - Interview Scheduled",
+                    "Round 2 - Interview Scheduled",
+                    "Round 3 - Interview Scheduled",
+                    "Round 1 - Interview Selected",
+                    "Round 2 - Interview Selected",
+                    "Round 3 - Interview Selected",
+                    "Round 1 - Interview Rejected",
+                    "Round 2 - Interview Rejected",
+                    "Round 3 - Interview Rejected",
+                    "Selected",
+                    "Not Selected"
+                ],
+                "Offers": [
+                    "Fitment Initiated",
+                    "Fitment L2 Pending",
+                    "Fitment L1 Pending",
+                    "Fitment L2 Approved",
+                    "Fitment L1 Approved",
+                    "Fitment L2 Rejected",
+                    "Fitment L1 Rejected",
+                    "Offer Sent",
+                    "Offer Accepted",
+                    "Offer Rejected",
+                    "Offer Revoked"
+                ],
+                "Joins": [
+                    "Joined",
+                    "Not Joined"
+                ]
+            }
+        },
+        "Recruitment Funnel": {
+            "applyStatus": {
+                "Shortlist": [
+                    "Shortlisted",
+                    "CV Screening Pending",
+                    "HM Screening Pending",
+                    "Phone Screening Pending",
+                    "CV Shortlisted",
+                    "HM Shortlisted",
+                    "Phone Screening Selected"
+                ],
+                "Interview Scheduled": [
+                    "Round 1 - Interview Scheduled",
+                    "Round 2 - Interview Scheduled",
+                    "Round 3 - Interview Scheduled"
+                ],
+                "Interview Selected": [
+                    "Round 1 - Interview Selected",
+                    "Round 2 - Interview Selected",
+                    "Round 3 - Interview Selected"
+                ],
+                "Final Selects": [
+                    "Selected"
+                ]
+            }
+        },
+        "RecruitmentActivities": {
+            "weeklyTrend": {
+                "ScreeningShortList": [
+                    "Put On Hold",
+                    "Shortlist",
+                    "Apply",
+                    "Reject",
+                    "Move to Another Job",
+                    "Shortlist to Another Job",
+                    "HR Shortlist",
+                    "HR Reject",
+                    "Tech Screening",
+                    "CV Screening",
+                    "Assessment Pass",
+                    "Assessment Fail"
+                ],
+                "InterviewScheduled": [
+                    "Request Documents",
+                    "select",
+                    "Regret",
+                    "Schedule Interview",
+                    "Interview Select",
+                    "Interview Reject",
+                    "Submit Documents",
+                    "Accept Documents",
+                    "Reject Documents",
+                    "Hold Selection"
+                ],
+                "feedback": [
+                    "Provide Feedback"
+                ],
+                "advance": [
+                    "Make Fitment",
+                    "Edit Fitment",
+                    "Req Fitment Approval L1",
+                    "Fitment L1 Approve",
+                    "Fitment L1 Reject",
+                    "Req Fitment Approval L2",
+                    "Fitment L2 Approve",
+                    "Fitment L2 Reject",
+                    "Req Fitment Approval L3",
+                    "Fitment L3 Approve",
+                    "Fitment L3 Reject",
+                    "Req Fitment Approval L4",
+                    "Fitment L4 Approve",
+                    "Fitment L4 Reject",
+                    "Make An Offer",
+                    "Send Offer",
+                    "Accept Offer",
+                    "Reject Offer",
+                    "Revoke Offer",
+                    "Make An Offer",
+                    "Mark As Joined",
+                    "Mark As Not Joined"
+                ]
+            },
+            "horizontal": {
+                "Apply": "Pending",
+                "Tech Screening": "Tech Screening Pending",
+                "Tech Reject": "Tech Rejected",
+                "Shortlist": "Shortlisted",
+                "CV Shortlist": "CV Shortlisted",
+                "Move to Another Job": "Moved to Another Job",
+                "Put On Hold": "On Hold",
+                "Reject": "Rejected",
+                "Assessment Pass": "Assessment Passed",
+                "Assessment Fail": "Assessment Failed",
+                "Schedule Interview": "Interview Scheduled",
+                "Provide Feedback": "Interviewed",
+                "Interview Reject": "Interview Rejected",
+                "Interview Select": "Interview Selected",
+                "Request Documents": "Documents Requested",
+                "Submit Documents": "Documents Submitted",
+                "Accept Documents": "Documents Accepted",
+                "Reject Documents": "Documents Rejected",
+                "Select": "Selected",
+                "Regret": "Not Selected",
+                "Hold Selection": "Selection On Hold",
+                "Offer Initiated": "Initiate Offer",
+                "Make Fitment": "Fitment Initiated",
+                "Req Fitment Approval L1": "Fitment L1 Pending",
+                "Fitment L1 Approve": "Fitment L1 Approved",
+                "Fitment L1 Reject": "Fitment L1 Rejected",
+                "Req Fitment Approval L2": "Fitment L2 Pending",
+                "Fitment L2 Approve": "Fitment L2 Approved",
+                "Fitment L2 Reject": "Fitment L2 Rejected",
+                "Req Fitment Approval L3": "Fitment L3 Pending",
+                "Fitment L3 Approve": "Fitment L3 Approved",
+                "Fitment L3 Reject": "Fitment L3 Rejected",
+                "Req Fitment Approval L4": "Fitment L4 Pending",
+                "Fitment L4 Approve": "Fitment L4 Approved",
+                "Fitment L4 Reject": "Fitment L4 Rejected",
+                "Send Offer": "Offer Sent",
+                "Reject Offer": "Offer Rejected",
+                "Accept Offer": "Offer Accepted",
+                "Revoke Offer": "Offer Revoked",
+                "Mark As Joined": "Joined",
+                "Mark As Not Joined": "Not Joined",
+                "Make An Offer": "Offer Made",
+                "Initiate BGV": "BGV Initiated",
+                "BGV Pass": "BGV Passed",
+                "BGV Fail": "BGV Failed",
+                "Initiate Medical Checkup": "Medical Checkup Initiated",
+                "Medical Checkup Pass": "Medical Checkup Passed",
+                "Medical Checkup Fail": "Medical Checkup Failed",
+                "Blacklist": "Blacklisted"
+            }
+        }
+    },
+    "customFilter": {
+        "Departments": "deptFullCode",
+        "Location": "jobLocationRecord.formattedLocation",
+        "Recruiters": "jobCollaborationRecord.username",
+        "Hiring Manager": "hiringManager"
+    },
+    "filters": {
+        "toggle1": [
+            "jobs",
+            "Positions"
+        ]
+    }
+}

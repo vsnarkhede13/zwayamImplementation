@@ -1,0 +1,20 @@
+{
+    "companyId": "14977",
+    "queryName": "InterviewIncentiveReport",
+    "query": "SELECT j.reference_number AS 'Indent Id', CONCAT(ja.first_name, ' ', ja.last_name) AS 'Candidate Name', j.job_title AS 'Job Title', ja.matchedSkills AS 'Skills', ja.id AS 'Application Id', ja.email_id AS 'Candidate Email ID', ja.is_active AS 'Application Status', ja.current_status AS 'Current Status', (SELECT rfv.value FROM c3_requisition_field_values rfv JOIN c3_requisition_fields rf ON rfv.requisition_field_id = rf.id WHERE rf.field_name = 'Opportunity/Project Name' AND rfv.requisition_id = j.id LIMIT 1) AS 'Account', (SELECT rfv.value FROM c3_requisition_field_values rfv JOIN c3_requisition_fields rf ON rfv.requisition_field_id = rf.id WHERE rf.field_name = 'Business Unit' AND rfv.requisition_id = j.id LIMIT 1) AS 'Business Unit', ais.interview_round AS 'Interview Type (L1/L2/L3)', DATE_FORMAT(ais.interview_from_time_1, '%e-%b-%Y') AS 'Interview Date', IF(WEEKDAY(ais.interview_from_time_1) < 5, 'Weekday', 'Weekend') AS 'Week Day', IF(WEEKDAY(ais.interview_from_time_1) < 5, '1000', '1500') AS 'Incentive', (SELECT aa.actionCode FROM ApplyAction aa WHERE aa.applyId = ais.applicantion_id AND aa.subflowName = ais.interview_round AND aa.actionCode IN ('Interview Select' , 'Interview Reject') LIMIT 1) AS 'Candidate Status', (SELECT u.username FROM c3_user u WHERE u.id = ais.scheduled_by) AS 'Interview Scheduled By', (SELECT U.username FROM c3_user AS U WHERE ai.interview_id = ais.id AND U.id = ai.user_id) AS 'Interviewer Name', (SELECT DISTINCT u.username FROM c3_applicant_interview_feedback aif JOIN c3_user u ON aif.user_id = u.id WHERE aif.interview_id = ais.id AND aif.user_id = ai.user_id) AS 'Feedback provided by', (SELECT DISTINCT u.email_id FROM c3_applicant_interview_feedback aif JOIN c3_user u ON aif.user_id = u.id WHERE aif.interview_id = ais.id AND aif.user_id = ai.user_id) AS 'Feedback provider EmailId', (SELECT DISTINCT u.employeeId FROM c3_applicant_interview_feedback aif JOIN c3_user u ON aif.user_id = u.id WHERE aif.interview_id = ais.id AND aif.user_id = ai.user_id) AS 'Feedback provider Emp Id', (SELECT DISTINCT U.username FROM c3_user U, c3_job_collaboration jc WHERE jc.id = ja.job_id AND jc.role = 'Recruiter' AND U.id = jc.user_id) AS 'Recruiter Name', (SELECT DISTINCT U.username FROM c3_user U, c3_job_collaboration jc WHERE jc.id = ja.job_id AND jc.role = 'TA Lead' AND U.id = jc.user_id) AS 'TA Lead' FROM c3_application_interviewer ai JOIN c3_application_interview_schedule ais ON ai.interview_id = ais.id JOIN c3_job_application ja ON ja.id = ais.applicantion_id JOIN c3_job j ON ja.job_id = j.id $conditions$",
+    "conditions": "WHERE ja.company_id = (select distinct companyId from UserRoleGroup where user_id= $userId$ and roleCode in ('Admin','OMT') limit 1) and ais.interview_round not like 'Recruiter Screening' and  ((j.department_id in ($departmentIds$) or j.id in (select job_id from c3_job_collaboration where user_id=$userId$)) or ja.company_id = (select companyId from UserRoleGroup where user_id= $userId$ and roleCode = 'Analytics Team')) and ais.reason_for_cancel_all is null",
+    "filterConditions": {
+        "fromDate": "ais.interview_from_time_1 >= '$fromDate$'",
+        "toDate": "ais.interview_from_time_1 <= '$toDate$'",
+        "recruiter": "jcol.user_id in ($recruiter$) ",
+        "location": "j.location in ($location$) ",
+        "department": " j.deptFullCode in ($department$) ",
+        "hiringManager": "j.hiring_manager in ($hiringManager$) ",
+        "jobStatus": "j.status = '$jobStatus$'"
+    },
+    "joiningTables": {
+        "c3_job_collaboration": " join c3_job_collaboration jcol on j.id = jcol.job_id "
+    },
+    "fileName": "InterviewIncentiveReport.csv",
+    "displayName": "Interview Incentive Report (.csv)"
+}

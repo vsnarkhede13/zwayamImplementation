@@ -1,0 +1,25 @@
+{
+    "companyId": 15174,
+    "companyName": "Persistent",
+    "userId": 2474013,
+    "emailId": "persistent@yopmail.com",
+    "password": "123456",
+    "roleId": 1,
+    "cancelInterviews": {
+        "cancelInterviewsEnabled": true,
+        "cancelInterviewsName": "Loop-Cut"
+    },
+    "interviewerType": [
+        "Interviewer",
+        "Shadow",
+        "Reverse Shadow"
+    ],
+    "resceduleInterviewReasons": [
+        "Request from Candidate",
+        "Request from Interviewer"
+    ],
+    "cancelInterviewReason": [
+        "Due to Candidate",
+        "Due to Interviewer"
+    ]
+}

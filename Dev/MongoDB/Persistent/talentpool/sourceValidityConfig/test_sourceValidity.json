@@ -1,0 +1,237 @@
+{
+    "_class": "com.zwayam.ta.mongodb.talentpool.model.SourceValidityConfig",
+    "name": "PersistentSourceValidity",
+    "companyId": "16799",
+    "sourceStatusAndValidityDays": {
+        "Partner": {
+            "incrementDays": {
+                "Pending": 30,
+                "Recruiter Screening Selected": 10,
+                "Recruiter Screening Rejected": 10,
+                "HM Screening Pending": 0,
+                "HM Shortlisted": 10,
+                "Rejected": 5,
+                "Drop": 10,
+                "L1-Interview Scheduled": 0,
+                "L1-Interview Selected": 10,
+                "L1A-Interview Scheduled": 0,
+                "L1A-Interview Selected": 10,
+                "Client-Interview Scheduled": 0,
+                "Client-Interview Selected": 10,
+                "L2-Interview Scheduled": 0,
+                "L2-Interview Selected": 10,
+                "Selected": 10,
+                "Not Selected": 5,  
+                "Fitment Initiated": 10,
+                "Fitment L1 Approval Pending": 10,
+                "Fitment L1 Approved": 10,
+                "Fitment L2 Approval Pending": 10,
+                "Fitment L2 Approved": 10,
+                "Fitment L3 Approval Pending": 10,
+                "Fitment L3 Approved": 10,
+                "Offer Modified": 10,
+                "Offer Sent": 10,
+                "Offer Accepted": 10,
+                "Joined": 999
+            },
+            "normalValidity": 10,
+            "resetIncrementOnNegativeStatus": false,
+            "retainMaximumOnPositiveState": true,
+            "resetIncrementOnNeutralState": false
+        },
+        "EmployeeReferral": {
+            "incrementDays": {
+                "Pending": 30,
+                "Recruiter Screening Selected": 10,
+                "Recruiter Screening Rejected": 10,
+                "HM Screening Pending": 0,
+                "HM Shortlisted": 10,
+                "Rejected": 5,
+                "Drop": 10,
+                "L1-Interview Scheduled": 0,
+                "L1-Interview Selected": 10,
+                "L1A-Interview Scheduled": 0,
+                "L1A-Interview Selected": 10,
+                "Client-Interview Scheduled": 0,
+                "Client-Interview Selected": 10,
+                "L2-Interview Scheduled": 0,
+                "L2-Interview Selected": 10,
+                "Selected": 10,
+                "Not Selected": 5,  
+                "Fitment Initiated": 10,
+                "Fitment L1 Approval Pending": 10,
+                "Fitment L1 Approved": 10,
+                "Fitment L2 Approval Pending": 10,
+                "Fitment L2 Approved": 10,
+                "Fitment L3 Approval Pending": 10,
+                "Fitment L3 Approved": 10,
+                "Offer Modified": 10,
+                "Offer Sent": 10,
+                "Offer Accepted": 10,
+                "Joined": 999
+            },
+            "normalValidity": 10,
+            "resetIncrementOnNegativeStatus": false,
+            "retainMaximumOnPositiveState": true,
+            "resetIncrementOnNeutralState": false
+        },
+        "default": {
+            "incrementDays": {
+                "Pending": 30,
+                "Recruiter Screening Selected": 10,
+                "Recruiter Screening Rejected": 10,
+                "HM Screening Pending": 0,
+                "HM Shortlisted": 10,
+                "Rejected": 5,
+                "Drop": 10,
+                "L1-Interview Scheduled": 0,
+                "L1-Interview Selected": 10,
+                "L1A-Interview Scheduled": 0,
+                "L1A-Interview Selected": 10,
+                "Client-Interview Scheduled": 0,
+                "Client-Interview Selected": 10,
+                "L2-Interview Scheduled": 0,
+                "L2-Interview Selected": 10,
+                "Selected": 10,
+                "Not Selected": 5,  
+                "Fitment Initiated": 10,
+                "Fitment L1 Approval Pending": 10,
+                "Fitment L1 Approved": 10,
+                "Fitment L2 Approval Pending": 10,
+                "Fitment L2 Approved": 10,
+                "Fitment L3 Approval Pending": 10,
+                "Fitment L3 Approved": 10,
+                "Offer Modified": 10,
+                "Offer Sent": 10,
+                "Offer Accepted": 10,
+                "Joined": 999
+            },
+            "normalValidity": 10,
+            "resetIncrementOnNegativeStatus": false,
+            "retainMaximumOnPositiveState": true,
+            "resetIncrementOnNeutralState": false
+        }
+    },
+    "statusMapping": {},
+    "isCalculateValidityFromAppliedDate": true,
+    "incrementalDays": 10,
+    "isActive": true,
+    "newSourceAndOldSrcRules": {
+        "Partner": [{
+                "oldSrcTypes": [
+                    "EmployeeReferral",
+                    "CareerSite",
+                    "RecruiterUpload",
+                    "Partner"
+                ],
+                "isOldSrcValid": true,
+                "result": "DO_NOT_ALLOW",
+                "retainOldSrcRec": false
+            },
+            {
+                "oldSrcTypes": [
+                    "EmployeeReferral",
+                    "Partner",
+                    "CareerSite",
+                    "RecruiterUpload"
+                ],
+                "isOldSrcValid": false,
+                "result": "ALLOW",
+                "retainOldSrcRec": false
+            }
+        ],
+        "EmployeeReferral": [{
+                "oldSrcTypes": [
+                    "Partner",
+                    "CareerSite",
+                    "RecruiterUpload",
+                    "EmployeeReferral"
+                ],
+                "isOldSrcValid": true,
+                "result": "DO_NOT_ALLOW",
+                "retainOldSrcRec": false
+            },
+            {
+                "oldSrcTypes": [
+                    "EmployeeReferral",
+                    "Partner",
+                    "CareerSite",
+                    "RecruiterUpload"
+                ],
+                "isOldSrcValid": false,
+                "result": "ALLOW",
+                "retainOldSrcRec": false
+            }
+        ],
+        "RecruiterUpload": [{
+                "oldSrcTypes": [
+                    "RecruiterUpload",
+                    "EmployeeReferral",
+                    "Partner",
+                    "CareerSite"
+                ],
+                "isOldSrcValid": true,
+                "result": "ALLOW",
+                "retainOldSrcRec": true
+            },
+            {
+                "oldSrcTypes": [
+                    "EmployeeReferral",
+                    "Partner",
+                    "CareerSite",
+                    "RecruiterUpload"
+
+                ],
+                "isOldSrcValid": true,
+                "result": "DO_NOT_ALLOW",
+                "retainOldSrcRec": false
+            },
+            {
+                "oldSrcTypes": [
+                    "EmployeeReferral",
+                    "Partner",
+                    "CareerSite",
+                    "RecruiterUpload"
+                ],
+                "isOldSrcValid": false,
+                "result": "ALLOW",
+                "retainOldSrcRec": false
+            }
+        ],
+        "CareerSite": [{
+                "oldSrcTypes": [
+                    "CareerSite",
+                    "Partner",
+                    "EmployeeReferral",
+                    "RecruiterUpload"
+                ],
+                "isOldSrcValid": true,
+                "result": "ALLOW",
+                "retainOldSrcRec": true
+            },
+            {
+                "oldSrcTypes": [
+                    "CareerSite",
+                    "Partner",
+                    "EmployeeReferral",
+                    "RecruiterUpload"
+                ],
+                "isOldSrcValid": true,
+                "result": "ALLOW",
+                "retainOldSrcRec": false
+            },
+            {
+                "oldSrcTypes": [
+                    "EmployeeReferral",
+                    "Partner",
+                    "CareerSite",
+                    "RecruiterUpload",
+                    "Job Board"
+                ],
+                "isOldSrcValid": false,
+                "result": "ALLOW",
+                "retainOldSrcRec": false
+            }
+        ]
+    }
+}

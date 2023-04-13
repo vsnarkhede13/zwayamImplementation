@@ -1,0 +1,53 @@
+{
+    "companyId": "14977",
+    "enableTalentML": true,
+    "jobSignalsConfigList": [
+        {
+            "JobSignalsCategory": "Educational Signals",
+            "JobSignalsOptions": [
+                "IIT Grad",
+                "NIT Grad",
+                "IIM Grad",
+                "Top Institute"
+            ]
+        },
+        {
+            "JobSignalsCategory": "Diversity Signal",
+            "JobSignalsOptions": [
+                "Female Diversity"
+            ]
+        },
+        {
+            "JobSignalsCategory": "Company Signals",
+            "JobSignalsOptions": [
+                "Unicorn Exp",
+                "Top Internet Product",
+                "Top Software Product",
+                "Top IT Services MNC",
+                "Top Consulting MNC"
+            ]
+        }
+    ],
+    "signalsToStandoutsMapping": {
+        "Educational Signals": [
+            "iimGrad",
+            "iitGrad",
+            "nitGrad",
+            "topinstituteGrad"
+        ],
+        "Company Signals": [
+            "top_it_services_mnc",
+            "unicorn_exp",
+            "top_software_product",
+            "top_consulting_mnc",
+            "top_internet_company"
+        ],
+        "Diversity Signal": [
+            "Female Diversity"
+        ]
+    },
+    
+    "diversityMapping": {
+        "F": "Female Diversity"
+    }
+}
