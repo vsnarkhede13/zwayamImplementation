@@ -1,8 +1,0 @@
-{
-    "companyId" : 14977,
-    "resdexEnabled" : true,
-    "redirectUrl" : "https://persistentstaging.openings.co/resdexauth/#/token",
-    "vendorCode" : "tTdmQnR44ndBIj5G",
-    "accessTokenTime" : NumberLong(36000000000),
-    "secretKey" : "483b31765bc9c3ab026663b2bea4954af264afa8233b4152c533dc3f2883b495fddd0a1733e4daeeff335b6cbed33dd15018d97d1247ef170264b9916a659e9beeaee4893445ff80"
-}
